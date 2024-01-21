@@ -40,29 +40,34 @@ function App() {
   `;
 
   return (
-    <Markdown
-      children={markdown}
-      className={markdownStyle.reactMarkdown}
-      components={{
-        code(props) {
-          const { children, className, ...rest } = props;
-          const match = /language-(\w+)/.exec(className || "");
-          return match ? (
-            <SyntaxHighlighter
-              //{...rest}
-              PreTag="div"
-              children={String(children).replace(/\n$/, "")}
-              language={match[1]}
-              style={dracula}
-            />
-          ) : (
-            <code {...rest} className={className}>
-              {children}
-            </code>
-          );
-        },
-      }}
-    />
+    <div>
+      <Markdown
+        children={markdown}
+        className={markdownStyle.reactMarkdown}
+        components={{
+          code(props) {
+            const { children, className, ...rest } = props;
+            const match = /language-(\w+)/.exec(className || "");
+            return match ? (
+              <SyntaxHighlighter
+                //{...rest}
+                PreTag="div"
+                children={String(children).replace(/\n$/, "")}
+                language={match[1]}
+                style={dracula}
+              />
+            ) : (
+              <code {...rest} className={className}>
+                {children}
+              </code>
+            );
+          },
+        }}
+      />
+      <h1 className="text-3xl font-bold underline text-purple-700">
+        Hello world!
+      </h1>
+    </div>
   );
 }
 
