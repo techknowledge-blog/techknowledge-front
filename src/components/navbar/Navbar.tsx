@@ -4,9 +4,6 @@ import styles from "./Navbar.module.css";
 import close from "../../assets/icons/close.svg";
 import menu from "../../assets/icons/menu.svg";
 
-import buttonLightMode from "../../assets/icons/buttonLightMode.svg";
-import LightIcon from "../../assets/icons/light-icon-mode.svg";
-
 interface NavbarProps {
   navbarOptions: string[];
 }
@@ -24,7 +21,7 @@ export function Navbar({ navbarOptions }: NavbarProps) {
       </div>
 
       <ul
-        className={`md:flex md:items-center gap-10 text-xl md:pb-0  
+        className={`md:flex md:items-center gap-8 text-xl md:pb-0  
       md:static md:z-auto md:w-auto md:pl-0 transition-all 
       duration-500 ease-in-out ${open ? "visible" : "hidden"}`}
       >
@@ -33,14 +30,6 @@ export function Navbar({ navbarOptions }: NavbarProps) {
             <a href="#">{options}</a>
           </li>
         ))}
-
-        <div className="dark-light-mode flex items-center gap-2">
-          <img
-            src={buttonLightMode}
-            alt="Botão para ativar o modo claro e escuro da página"
-          />
-          <img src={LightIcon} alt="Icone no formato de um sol." />
-        </div>
       </ul>
     </div>
   );
