@@ -6,7 +6,7 @@ import LightIcon from "../../assets/icons/light-icon-mode.svg";
 import techknowledgeLogo from "../../assets/images/techknowledge-logo.png";
 
 export function Header() {
-  let options = ["Home", "Sobre", "Posts", "Comunidade"];
+  let options = ["Sobre", "Posts", "Projetos", "Comunidade"];
 
   return (
     <header className="md:flex items-center justify-between gap-14">
