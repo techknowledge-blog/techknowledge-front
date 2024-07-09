@@ -5,6 +5,8 @@ import buttonLightMode from "../../assets/icons/buttonLightMode.svg";
 import LightIcon from "../../assets/icons/light-icon-mode.svg";
 import techknowledgeLogo from "../../assets/images/techknowledge-logo.png";
 
+import styles from "./Header.module.css";
+
 export function Header() {
   let options = ["Sobre", "Posts", "Projetos", "Comunidade"];
 
@@ -13,6 +15,7 @@ export function Header() {
       <img
         src={techknowledgeLogo}
         alt="Está escrito o nome Techknowledge na cor branca."
+        className={styles["logo"]}
       />
 
       <Navbar navbarOptions={options} />
