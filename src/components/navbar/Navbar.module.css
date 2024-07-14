@@ -1,0 +1,25 @@
+.primary-navigation a {
+  position: relative;
+}
+
+.primary-navigation a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #00c2ff;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  vertical-align: middle;
+}
+
+.primary-navigation a:hover::after {
+  width: 100%;
+  transition: width 400ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .primary-navigation {
+    padding-left: 12px;
+  }
+}
