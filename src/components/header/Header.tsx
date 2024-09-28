@@ -11,7 +11,7 @@ export function Header() {
   let options = ["Sobre", "Posts", "Projetos", "Comunidade"];
 
   return (
-    <header className="md:flex items-center justify-evenly gap-4 pt-6 px-4">
+    <header className="md:flex items-center justify-around pt-6 px-4">
       <img
         src={techknowledgeLogo}
         alt="Está escrito o nome Techknowledge na cor branca."

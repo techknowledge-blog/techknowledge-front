@@ -15,7 +15,7 @@ export function Navbar({ navbarOptions }: NavbarProps) {
     <div className={styles["primary-navigation"]}>
       <div
         onClick={() => setOpen(!open)}
-        className="absolute right-8 top-5 cursor-pointer md:hidden"
+        className="absolute right-8 top-7 cursor-pointer md:hidden"
       >
         <img src={open ? close : menu} alt="" />
       </div>
