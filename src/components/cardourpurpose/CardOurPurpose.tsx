@@ -13,7 +13,7 @@ export function CardOurPurpose() {
         return (
           <div
             key={index}
-            className={`w-full sm:max-w-[10rem] md:max-w-[12rem] lg:max-w-[17.25rem] h-auto p-4 flex flex-col gap-4 items-center lg:items-start ${card.style}`}
+            className={`w-[20rem] sm:max-w-[10rem] md:max-w-[12rem] lg:max-w-[17.25rem] h-auto p-4 flex flex-col gap-4 items-center lg:items-start ${card.style}`}
           >
             <Icon
               size={32}
