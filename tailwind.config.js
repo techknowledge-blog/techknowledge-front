@@ -13,6 +13,7 @@ export default {
         blue: {
           300: "#00C2FF",
           500: "#39A0ED",
+          600: "#1D94F0",
         },
         violet: {
           100: "#EDE9FE",

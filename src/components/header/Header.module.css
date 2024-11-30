@@ -1,6 +1,6 @@
-@media (max-width: 286px) {
+@media (max-width: 480px) {
   .logo {
-    height: 34px;
+    height: 38px;
     margin-top: 8px;
   }
 }
