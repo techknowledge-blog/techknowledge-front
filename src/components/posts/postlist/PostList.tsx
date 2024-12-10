@@ -1,6 +1,7 @@
 import React from "react";
 
 import { ArrowRight } from "../../../../node_modules/@phosphor-icons/react/dist/index";
+import { Link } from "../../../../node_modules/react-router/dist/production/index";
 
 import { mockPost } from "../mockPost";
 
@@ -40,12 +41,14 @@ export function PostList() {
                 className="bg-[#1E293B] p-6 rounded-lg hover:bg-[#334155] transition"
               >
                 <div className="flex flex-col gap-4">
-                  <a
-                    href="#"
-                    className="text-xl font-bold text-[#EDE9FE] no-underline hover:underline hover:decoration-2 hover:decoration-blue-300"
-                  >
-                    {post.title}
-                  </a>
+                  <Link to={`/post/${post.id}`}>
+                    <a
+                      href="#"
+                      className="text-xl font-bold text-[#EDE9FE] no-underline hover:underline hover:decoration-2 hover:decoration-blue-300"
+                    >
+                      {post.title}
+                    </a>
+                  </Link>
                   <p className="text-sm text-[#C6D1F2]">{post.summary}</p>
                   <p className="text-xs text-[#9CA3AF]">{post.date}</p>
                 </div>
