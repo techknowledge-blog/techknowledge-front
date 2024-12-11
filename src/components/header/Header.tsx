@@ -10,7 +10,7 @@ import { Link } from "../../../node_modules/react-router/dist/production/index";
 
 export function Header() {
   return (
-    <header className="md:flex items-center justify-between pt-6 px-4">
+    <header className="md:flex items-center justify-between pt-6 sm:px-4 px-2">
       <Link to="/">
         <img
           src={techknowledgeLogo}
