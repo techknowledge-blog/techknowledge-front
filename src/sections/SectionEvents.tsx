@@ -7,7 +7,7 @@ export function SectionEvents() {
   return (
     <section className="flex flex-col gap-8 mt-16 md:flex-col lg:flex-row lg:gap-16 lg:items-center lg:justify-center">
       <div className="flex flex-col gap-4 w-full items-center text-center md:w-full lg:w-1/2 lg:items-start lg:text-left">
-        <h2 className="text-2xl font-bold text-white bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent w-full md:text-4xl lg:w-[24rem]">
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent w-full md:text-4xl lg:w-[24rem]">
           Nos convide para o seu evento!
         </h2>
 

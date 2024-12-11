@@ -27,7 +27,7 @@ export function PostList() {
   const postsByCategory = groupPostsByCategory(mockPost);
 
   return (
-    <section className="flex flex-col gap-12 py-8 px-4 max-w-5xl mx-auto">
+    <section className="flex flex-col gap-12 py-8 max-w-5xl mx-auto">
       {Object.entries(postsByCategory).map(([category, posts]) => (
         <div key={category} className="category-section">
           <h2 className="text-2xl font-semibold text-[#EDE9FE] mb-6">
