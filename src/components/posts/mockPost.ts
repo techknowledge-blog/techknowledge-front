@@ -2,8 +2,6 @@ import image1 from "../../assets/images/faz-funcionar-e-depois-melhora.jpeg";
 import image2 from "../../assets/images/olimpiada-do-conhecimento.jpeg";
 import image3 from "../../assets/images/techknowledge.jpeg";
 
-import { formatDate } from "../../utils/formatDate";
-
 export const mockPost = [
   {
     id: "1",
@@ -14,7 +12,7 @@ export const mockPost = [
     content: () => import("../posts/post/post1.mdx"),
     link: "",
     flag: "Reflexões",
-    date: formatDate(new Date("2024-11-28")),
+    date: "2024-11-28",
     category: "reflexões",
     author: "Leticia Dias",
   },
@@ -27,7 +25,7 @@ export const mockPost = [
     content: () => import("../posts/post/post2.mdx"),
     link: "",
     flag: "Olimpíada",
-    date: formatDate(new Date("2024-11-28")),
+    date: "2024-11-28",
     category: "olimpíada",
     author: "Leticia Dias",
   },
@@ -40,7 +38,7 @@ export const mockPost = [
     content: () => import("../posts/post/post3.mdx"),
     link: "",
     flag: "TechKnowledge",
-    date: formatDate(new Date("2024-11-28")),
+    date: "2024-11-28",
     category: "techknowledge",
     author: "Mikael Ribeiro",
   },
@@ -53,7 +51,7 @@ export const mockPost = [
     content: () => import("../posts/post/post4.mdx"),
     link: "",
     flag: "TechKnowledge",
-    date: formatDate(new Date("2024-11-20")),
+    date: "2024-11-20",
     category: "techknowledge",
     author: "Leticia Dias",
   },
