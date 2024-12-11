@@ -6,13 +6,15 @@ interface MdxProviderProps {
 }
 
 export function MdxProvider({ children }: MdxProviderProps) {
-  const components = {
-    h1: (props) => (
-      <h1 className="text-3xl font-bold text-teal-600" {...props} />
-    ),
-    p: (props) => <p className="text-base text-gray-300" {...props} />,
-    ul: (props) => <ul className="list-disc list-inside pl-4" {...props} />,
-  };
+  // const components = {
+  //   h1: (props) => (
+  //     <h1 className="text-3xl font-bold text-teal-600" {...props} />
+  //   ),
+  //   p: (props) => (
+  //     <p className="text-base text-gray-300 w-[58.563rem]" {...props} />
+  //   ),
+  //   ul: (props) => <ul className="list-disc list-inside pl-4" {...props} />,
+  // };
 
-  return <MDXProvider components={components}>{children}</MDXProvider>;
+  return <MDXProvider>{children}</MDXProvider>;
 }

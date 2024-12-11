@@ -11,6 +11,7 @@ export const mockPost = [
     summary:
       "Nesse post vamos abordar um pouco sobre um assunto bastante comum em nossa área onde nos deparamos constantemente com esse cenário. Será que fazer funcionar e depois melhorar é a melhor forma de se resolver um problema? Vem descobrir comigo.",
     coverImage: image1,
+    content: () => import("../posts/post/post1.mdx"),
     link: "",
     flag: "Reflexões",
     date: formatDate(new Date("2024-11-28")),
@@ -23,10 +24,12 @@ export const mockPost = [
     summary:
       "O que é a Olimpíada do Conhecimento? Como é o processo de treinamento dos competidores? Isso e muito mais, vamos ver no decorrer deste post, sobre essa competição que tem gerado um impacto na vida de muitos competidores que passam por ela.",
     coverImage: image2,
+    content: () => import("../posts/post/post2.mdx"),
     link: "",
     flag: "Olimpíada",
     date: formatDate(new Date("2024-11-28")),
     category: "olimpíada",
+    author: "Leticia Dias",
   },
   {
     id: "3",
@@ -34,20 +37,24 @@ export const mockPost = [
     summary:
       "Como surgiu a ideia de criar esse blog, qual o objetivo dele? Qual a  finalidade do nosso projeto? Nesse primeiro post, vamos nos apresentar e  falar um pouco da motivação por trás do TechKnowledge!",
     coverImage: image3,
+    content: () => import("../posts/post/post3.mdx"),
     link: "",
     flag: "TechKnowledge",
     date: formatDate(new Date("2024-11-28")),
-    category: "techKnowledge",
+    category: "techknowledge",
+    author: "Mikael Ribeiro",
   },
   {
     id: "4",
-    title: "“Fax funcionar e depois melhora.” Será mesmo?",
+    title: "Quem somos nós?",
     summary:
-      "Nesse post vamos abordar um pouco sobre um assunto bastante comum em nossa área onde nos deparamos constantemente com esse cenário. Será que fazer funcionar e depois melhorar é a melhor forma de se resolver um problema? Vem descobrir comigo.",
+      "Quem é a Leticia e o Mikael? São dois aventureiros? São dois alíenigenas de outro planeta? Ou são só dois devs que gostam muito de tecnologia? Vem descobrir um pouco sobre a jornada desses dois jovens devs.",
     coverImage: image1,
+    content: () => import("../posts/post/post4.mdx"),
     link: "",
-    flag: "Reflexões",
+    flag: "TechKnowledge",
     date: formatDate(new Date("2024-11-20")),
-    category: "reflexões",
+    category: "techknowledge",
+    author: "Leticia Dias",
   },
 ];
