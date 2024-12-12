@@ -35,7 +35,11 @@ export function PostList() {
             {category}
           </h2>
 
-          <ul className="flex flex-col md:flex-row gap-8">
+          <ul
+            className={`grid grid-cols-1 gap-4 ${
+              posts.length === 1 ? "grid-cols-1" : "md:grid-cols-2"
+            }`}
+          >
             {posts.map((post) => (
               <li
                 key={post.id}

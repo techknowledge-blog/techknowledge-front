@@ -59,10 +59,6 @@ export function PostPreview({ posts }: PostPreviewProps) {
                   {post.title}
                 </a>
               </div>
-
-              {/* <h2 className="hover:underline font-semibold text-[#EDE9FE] text-base w-[16rem] sm:w-[14rem] lg:w-[14rem]">
-                {post.title}
-              </h2> */}
             </Link>
             <p className="text-[#C6D1F2] text-sm w-[16rem] sm:w-[14rem] lg:w-[16rem] mx-auto mb-4 lg:mx-0 mt-4 sm:mb-6 lg:min-h-[34vh]">
               {post.summary}

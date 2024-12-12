@@ -55,4 +55,30 @@ export const mockPost = [
     category: "techknowledge",
     author: "Leticia Dias",
   },
+  {
+    id: "5",
+    title: "Quem somos nós?",
+    summary:
+      "Quem é a Leticia e o Mikael? São dois aventureiros? São dois alíenigenas de outro planeta? Ou são só dois devs que gostam muito de tecnologia? Vem descobrir um pouco sobre a jornada desses dois jovens devs.",
+    coverImage: image1,
+    content: () => import("../posts/post/post4.mdx"),
+    link: "",
+    flag: "TechKnowledge",
+    date: "2024-11-20",
+    category: "techknowledge",
+    author: "Leticia Dias",
+  },
+  {
+    id: "6",
+    title: "Quem somos nós?",
+    summary:
+      "Quem é a Leticia e o Mikael? São dois aventureiros? São dois alíenigenas de outro planeta? Ou são só dois devs que gostam muito de tecnologia? Vem descobrir um pouco sobre a jornada desses dois jovens devs.",
+    coverImage: image1,
+    content: () => import("../posts/post/post4.mdx"),
+    link: "",
+    flag: "TechKnowledge",
+    date: "2024-11-20",
+    category: "techknowledge",
+    author: "Leticia Dias",
+  },
 ];
