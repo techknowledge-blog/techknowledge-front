@@ -5,7 +5,7 @@ import image3 from "../../assets/images/techknowledge.jpeg";
 export const mockPost = [
   {
     id: "1",
-    title: "“Fax funcionar e depois melhora.” Será mesmo?",
+    title: "“Faz funcionar e depois melhora.” Será mesmo?",
     summary:
       "Nesse post vamos abordar um pouco sobre um assunto bastante comum em nossa área onde nos deparamos constantemente com esse cenário. Será que fazer funcionar e depois melhorar é a melhor forma de se resolver um problema? Vem descobrir comigo.",
     coverImage: image1,
