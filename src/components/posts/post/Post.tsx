@@ -7,8 +7,56 @@ import { MdxProvider } from "./MdxProvider";
 export function Post() {
   const { id } = useParams<{ id: string }>();
   const [Content, setContent] = useState<React.ComponentType | null>(null);
+  const [viewCount, setViewCount] = useState<number | null>(null);
+  const [timeSpent, setTimeSpent] = useState(0);
+  const [hasViewed, setHasViewed] = useState(false);
 
   const post = mockPost.find((post) => post.id === id);
+
+  useEffect(() => {
+    const storedViews = localStorage.getItem(`post_views_${id}`);
+    const initialViewCount = storedViews ? parseInt(storedViews, 10) : 0;
+    setViewCount(initialViewCount);
+  }, [id]);
+
+  useEffect(() => {
+    if (viewCount !== null) {
+      localStorage.setItem(`post_views_${id}`, viewCount.toString());
+    }
+  }, [viewCount, id]);
+
+  useEffect(() => {
+    const timer = setInterval(() => setTimeSpent((prev) => prev + 1), 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 10
+      ) {
+        markAsViewed();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (timeSpent >= 30) {
+      markAsViewed();
+    }
+  }, [timeSpent]);
+
+  const markAsViewed = () => {
+    if (!hasViewed && viewCount !== null) {
+      setHasViewed(true);
+      setViewCount((prev) => (prev !== null ? prev + 1 : 1));
+    }
+  };
 
   useEffect(() => {
     if (post?.content) {
@@ -29,7 +77,11 @@ export function Post() {
             {formatDateToCustomFormat(post.date)}
           </p>
         </div>
-        <p className="font-bold text-sm sm:text-base">0 visualizações</p>
+        <p className="font-bold text-sm sm:text-base">
+          {viewCount !== null
+            ? `${viewCount} ${viewCount > 1 ? "visualizações" : "visualização"}`
+            : "Carregando..."}
+        </p>
       </div>
 
       <MdxProvider>
