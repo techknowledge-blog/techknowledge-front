@@ -21,7 +21,7 @@ export function SectionCommunity() {
         />
 
         <div className="w-2/3 sm:w-1/3 mx-auto lg:mx-0">
-          <Button label="Entrar na comunidade" href="" />
+          <Button label="Entrar na comunidade" href="/community" />
         </div>
       </div>
     </section>

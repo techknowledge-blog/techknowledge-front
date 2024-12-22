@@ -6,19 +6,20 @@ import LightIcon from "../../assets/icons/light-icon-mode.svg";
 import techknowledgeLogo from "../../assets/images/techknowledge-logo.svg";
 
 import styles from "./Header.module.css";
+import { Link } from "../../../node_modules/react-router/dist/production/index";
 
 export function Header() {
-  let options = ["Sobre", "Posts", "Projetos", "Comunidade"];
-
   return (
-    <header className="md:flex items-center justify-between pt-6 px-4">
-      <img
-        src={techknowledgeLogo}
-        alt="Está escrito o nome Techknowledge na cor branca."
-        className={styles["logo"]}
-      />
+    <header className="md:flex items-center justify-between pt-6">
+      <Link to="/">
+        <img
+          src={techknowledgeLogo}
+          alt="Está escrito o nome Techknowledge na cor branca."
+          className={styles["logo"]}
+        />
+      </Link>
 
-      <Navbar navbarOptions={options} />
+      <Navbar />
 
       <div className="dark-light-mode md:flex md:items-center gap-2 hidden md:visible">
         <img

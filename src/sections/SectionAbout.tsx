@@ -7,7 +7,7 @@ export function SectionAbout() {
   return (
     <section className="flex flex-col items-center lg:items-start mt-16">
       <div className="w-full lg:w-auto">
-        <h2 className="text-2xl font-bold text-white mb-4 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent text-center lg:text-left md:text-4xl">
+        <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent text-center lg:text-left md:text-4xl">
           Sobre nós
         </h2>
       </div>
@@ -28,7 +28,7 @@ export function SectionAbout() {
           </div>
 
           <div className="w-2/3 sm:w-3/5 mx-auto lg:mx-0">
-            <Button label="Vem nos conhecer" href="" />
+            <Button label="Vem nos conhecer" href="/about" />
           </div>
         </div>
 

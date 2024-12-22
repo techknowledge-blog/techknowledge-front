@@ -2,6 +2,7 @@ import React from "react";
 
 import ImageTecnologies from "../assets/images/technologies.png";
 import { CaretRight } from "@phosphor-icons/react";
+import { Link } from "../../node_modules/react-router/dist/production/index";
 
 export function SectionMain() {
   return (
@@ -13,20 +14,24 @@ export function SectionMain() {
         </p>
 
         <div className="mt-6 flex flex-col items-center gap-4 lg:flex-row">
-          <a
-            href="#"
-            className="bg-blue-500 text-white py-3 px-6 flex items-center gap-1 justify-center rounded-full font-semibold hover:bg-blue-600"
-          >
-            Sobre nós
-            <CaretRight size={16} color="#ffffff" weight="bold" />
-          </a>
-          <a
-            href="#"
-            className="text-blue-500 py-3 px-6 flex items-center justify-center gap-1 font-semibold hover:underline"
-          >
-            Comunidade
-            <CaretRight size={16} color="#39A0ED" weight="bold" />
-          </a>
+          <Link to="/about">
+            <a
+              href="#"
+              className="bg-blue-500 text-white py-3 px-6 flex items-center gap-1 justify-center rounded-full font-semibold hover:bg-blue-600"
+            >
+              Sobre nós
+              <CaretRight size={16} color="#ffffff" weight="bold" />
+            </a>
+          </Link>
+          <Link to="/community">
+            <a
+              href="#"
+              className="text-blue-500 py-3 px-6 flex items-center justify-center gap-1 font-semibold hover:underline"
+            >
+              Comunidade
+              <CaretRight size={16} color="#39A0ED" weight="bold" />
+            </a>
+          </Link>
         </div>
       </div>
 
