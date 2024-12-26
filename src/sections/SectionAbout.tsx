@@ -13,21 +13,21 @@ export function SectionAbout() {
       </div>
 
       <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-16">
-        <div className="text-center lg:text-left w-full md:w-1/2 lg:w-[20rem]">
-          <div className="min-h-[10vh] lg:min-h-[42vh]">
-            <p className="mb-4 font-medium w-[20rem] mx-auto md:w-full">
+        <div className="flex flex-col gap-3 lg:gap-16 text-center lg:text-left w-full md:w-1/2 lg:w-[20rem]">
+          <div className="flex flex-col gap-6">
+            <p className="font-medium leading-relaxed w-[20rem] mx-auto md:w-full">
               Fala galera! Somos o Mikael e a Leticia, os criadores do blog
               TechKnowledge. Gostariamos de compartilhar com vocês um pouco da
               nossa jornada.
             </p>
 
-            <p className="mb-4 font-medium w-[20rem] mx-auto md:w-full">
+            <p className="font-medium leading-relaxed w-[20rem] mx-auto md:w-full">
               Vem conhecer um pouco sobre nós e como chegamos no universo da
               tecnologia.
             </p>
           </div>
 
-          <div className="w-2/3 sm:w-3/5 mx-auto lg:mx-0">
+          <div className="w-2/3 sm:w-3/5 mx-auto lg:mx-0 mb-4">
             <Button label="Vem nos conhecer" href="/about" />
           </div>
         </div>
