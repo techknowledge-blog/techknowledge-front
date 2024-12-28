@@ -8,7 +8,7 @@ export function SectionMain() {
   return (
     <section className="flex flex-col items-center gap-8 mt-8 lg:flex-row lg:justify-between">
       <div className="w-full md:w-3/4 lg:w-[34rem]">
-        <p className="text-2xl leading-[2.5rem] text-center font-semibold md:text-4xl md:leading-[3rem] lg:text-5xl lg:leading-[3.5rem] lg:text-left">
+        <p className="text-2xl leading-9 lg:leading-normal text-center font-semibold md:text-4xl md:leading-[3rem] lg:text-5xl lg:text-left">
           Um blog para compartilharmos conhecimento da área da{" "}
           <span className="text-blue-500">tecnologia</span>.
         </p>

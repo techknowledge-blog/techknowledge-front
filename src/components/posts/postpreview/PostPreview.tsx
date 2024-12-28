@@ -60,9 +60,11 @@ export function PostPreview({ posts }: PostPreviewProps) {
                 </a>
               </div>
             </Link>
-            <p className="text-[#C6D1F2] text-sm w-[16rem] sm:w-[14rem] lg:w-[16rem] mx-auto mb-4 lg:mx-0 mt-4 sm:mb-6 lg:min-h-[34vh]">
+
+            <p className="text-[#C6D1F2] text-sm leading-relaxed w-[16rem] sm:w-[14rem] lg:w-[16rem] mx-auto mb-4 lg:mx-0 mt-4 sm:mb-6 xl:min-h-[32vh] 2xl:min-h-[16vh]">
               {post.summary}
             </p>
+
             <p className="text-[#EDE9FE] font-bold text-base">
               {formatDateToLong(post.date)}
             </p>
