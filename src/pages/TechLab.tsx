@@ -3,8 +3,8 @@ import ImageAstronaut from "../assets/images/astronaut.png";
 
 export function TechLab() {
   return (
-    <div className="mt-16 w-full flex flex-col items-center lg:items-start">
-      <div className="flex items-center justify-center w-full">
+    <div className="w-full flex flex-col items-center justify-center h-screen">
+      <div className="flex items-center justify-center lg:justify-start w-full">
         <p className="bg-[#93C5FD] w-[16rem] h-[2.5rem] rounded-full mb-8 flex items-center justify-center text-black font-bold text-lg">
           #Em Breve 2025
         </p>
