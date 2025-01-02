@@ -1,32 +1,31 @@
 import React from "react";
-
 import ImageAstronaut from "../assets/images/astronaut.png";
 
 export function TechLab() {
   return (
-    <div className="mt-16 w-full">
-      <div>
-        <p className="bg-[#93C5FD] w-[266px] h-[39px] rounded-full mb-8 flex items-center justify-center text-black font-bold text-lg">
+    <div className="mt-16 w-full flex flex-col items-center lg:items-start">
+      <div className="flex items-center justify-center w-full">
+        <p className="bg-[#93C5FD] w-[16rem] h-[2.5rem] rounded-full mb-8 flex items-center justify-center text-black font-bold text-lg">
           #Em Breve 2025
         </p>
       </div>
 
-      <div className="flex items-start justify-between">
-        <div>
-          <h2 className="text-2xl font-bold mb-8 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent text-center lg:text-left md:text-4xl">
+      <div className="flex flex-col items-center lg:flex-row lg:items-center lg:justify-between w-full max-w-screen-lg">
+        <div className="text-center lg:text-left lg:mr-8 flex flex-col items-center lg:items-start">
+          <h2 className="text-xl font-bold mb-8 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent md:text-2xl lg:text-4xl">
             Aguardem Novidades!
           </h2>
 
           <div>
-            <p className="text-2xl font-semibold w-[573px] mb-8">
+            <p className="text-base font-semibold mb-4 max-w-md md:text-lg lg:text-2xl lg:max-w-[573px]">
               Estamos trabalhando para lançar nossa página de TechLab no ano de
               2025.
             </p>
 
-            <p className="text-2xl font-semibold w-[573px]">
+            <p className="text-base font-semibold max-w-md md:text-lg lg:text-2xl lg:max-w-[573px]">
               Um espaço onde você encontrará nossos conteúdos, como podcasts,
               vídeos, artigos mais populares e muito mais. Fique de olho 👀 –
-              coisas incríveis estão a caminho!"
+              coisas incríveis estão a caminho!
             </p>
 
             <p className="mt-8 font-bold text-blue-300">
@@ -34,8 +33,11 @@ export function TechLab() {
             </p>
           </div>
         </div>
-
-        <img src={ImageAstronaut} alt="" className="object-cover h-[380px]" />
+        <img
+          src={ImageAstronaut}
+          alt="Astronauta"
+          className="mt-8 object-cover h-[200px] md:h-[300px] lg:mt-0 lg:h-[380px]"
+        />
       </div>
     </div>
   );
