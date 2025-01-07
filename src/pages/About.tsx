@@ -67,17 +67,17 @@ export function About() {
             <div>
               <p className="font-bold text-2xl">Mikael Ribeiro</p>
               <p className="w-[708px] mt-4">
-                I currently work on systems and websites development at SENAI -
-                AL, where I also had the opportunity to be a competitor in the
-                Worldskills 2022 National Selection, winning the 3rd place medal
-                in the occupation of Web Technologies.
+                Eae! Meu nome é Mikael Ribeiro, também conhecido como
+                "Mikkaiser". Co-fundei o blog TechKnowledge com minha amiga
+                Leticia Dias e iniciei minha carreira como desenvolvedor de
+                software em 2021.
               </p>
 
               <p className="w-[708px] mt-4">
-                I currently work on systems and websites development at SENAI -
-                AL, where I also had the opportunity to be a competitor in the
-                Worldskills 2022 National Selection, winning the 3rd place medal
-                in the occupation of Web Technologies.
+                Atualmente, sou professor de tecnologia da informação nos
+                Emirados Árabes. Minha missão é capacitar a próxima geração de
+                profissionais de software com as habilidades e o conhecimento
+                necessários para se destacarem no cenário global.
               </p>
             </div>
 
@@ -102,17 +102,17 @@ export function About() {
             <div>
               <p className="font-bold text-2xl">Leticia Dias</p>
               <p className="w-[708px] mt-4">
-                I currently work on systems and websites development at SENAI -
-                AL, where I also had the opportunity to be a competitor in the
-                Worldskills 2022 National Selection, winning the 3rd place medal
-                in the occupation of Web Technologies.
+                Olá, meu nome é Leticia Dias. Sou fundadora do blog
+                TechKnowledge junto com meu amigo Mikael Ribeiro. Iniciei minha
+                carreira como desenvolvedora full stack em 2022.
               </p>
 
               <p className="w-[708px] mt-4">
-                I currently work on systems and websites development at SENAI -
-                AL, where I also had the opportunity to be a competitor in the
-                Worldskills 2022 National Selection, winning the 3rd place medal
-                in the occupation of Web Technologies.
+                Atualmente, trabalho como desenvolvedora full stack.
+                Recentemente, atuei como desenvolvedora frontend react em um
+                projeto e, anteriormente, fui professora no curso técnico de
+                informática para internet, onde tinha como missão preparar os
+                alunos para o mercado de trabalho.
               </p>
             </div>
 
