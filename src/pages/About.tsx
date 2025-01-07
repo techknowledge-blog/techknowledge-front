@@ -39,16 +39,26 @@ export function About() {
 
           <p className="text-base mb-4">
             Inicialmente, queríamos compartilhar nossas experiências como
-            competidores da Olimpíada do Conhecimento, a seletiva nacional para
-            a maior competição de educação profissional do mundo, a WorldSkills,
-            e também dividir as lições aprendidas em nossa trajetória como
+            competidores da{" "}
+            <span className="relative group cursor-pointer text-blue-500 underline">
+              Olimpíada do Conhecimento
+              <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-72 bg-gray-800 text-white text-sm rounded-lg shadow-lg px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                A Olimpíada do Conhecimento é a seletiva nacional para a maior
+                competição de educação profissional do mundo, a WorldSkills. É
+                uma oportunidade de demonstrar habilidades e buscar excelência
+                na profissão.
+              </span>
+            </span>
+            , e também dividir as lições aprendidas em nossa trajetória como
             desenvolvedores.
           </p>
 
           <p className="text-base mb-4">
-            Nosso blog foi criado para oferecer conteúdos que não apenas
-            informam, mas que também capacitam e desafiam desenvolvedores a
-            alcançar novos patamares em suas jornadas profissionais.
+            Hoje, nosso blog vai além. Criamos conteúdos que não apenas
+            informam, mas também capacitam e desafiam desenvolvedores a alcançar
+            novos objetivos em suas jornadas profissionais. Somos movidos pela
+            paixão por tecnologia e acreditamos no aprendizado contínuo, sempre
+            explorando e descobrindo algo novo.
           </p>
         </div>
       </div>
