@@ -6,11 +6,6 @@ export async function getPosts() {
 }
 
 export async function getPostBySlug(slug: string) {
-  console.log("Slug: ", slug);
-
   const response = await api.get(`/posts/${slug}`);
-
-  console.log("Response Data:", response.data);
-
   return response.data;
 }
