@@ -35,7 +35,7 @@ export function Contact() {
       </h1>
 
       <Section title="">
-        <div className="flex flex-col lg:flex-row items-start gap-8">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
           <div className="flex flex-col justify-between min-h-full">
             <h3 className="text-2xl font-bold mb-6 self-stretch">
               Nos convide para o seu evento!
@@ -66,7 +66,7 @@ export function Contact() {
       </Section>
 
       <Section title="Eventos">
-        <div className="flex flex-col lg:flex-row items-start gap-8">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
           <div>
             <p className="mb-6 max-w-lg">
               Tivemos a incrível oportunidade de palestrar em meetups como o{" "}
