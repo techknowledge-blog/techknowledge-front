@@ -16,7 +16,7 @@ export function AppRouter() {
       <Route path="/" element={<Home />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/posts" element={<Posts />}></Route>
-      <Route path="/post/:id" element={<Post />}></Route>
+      <Route path="/posts/:slug" element={<Post />}></Route>
       <Route path="/techlab" element={<TechLab />}></Route>
       <Route path="/community" element={<Community />}></Route>
     </Routes>
