@@ -27,7 +27,7 @@ export function SectionEvents() {
           </div>
 
           <div className="w-2/3 sm:w-1/3 mx-auto lg:mx-0">
-            <Button label="Saiba Mais" href="" />
+            <Button label="Saiba Mais" href="/contact" />
           </div>
         </div>
       </div>

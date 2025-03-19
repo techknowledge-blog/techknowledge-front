@@ -15,7 +15,7 @@ import {
 export function About() {
   return (
     <div className="w-full px-4">
-      <div className="mt-8 flex flex-col items-center w-full">
+      <div className="mt-16 flex flex-col items-center w-full">
         <h1 className="text-2xl font-bold text-center sm:text-3xl">Sobre</h1>
 
         <div className="bg-[#93C5FD] w-full h-[424px] mt-8 flex flex-col items-center rounded">
