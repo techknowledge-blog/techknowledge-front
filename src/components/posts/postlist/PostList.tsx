@@ -64,9 +64,9 @@ export function PostList() {
             {posts.map((post) => (
               <li
                 key={post.id}
-                className="bg-[#1E293B] p-6 rounded-lg hover:bg-[#334155] transition w-[20rem] md:w-full"
+                className="bg-[#1E293B] p-6 rounded-lg hover:bg-[#334155] transition w-[20rem] md:w-full h-full flex flex-col"
               >
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 flex-grow">
                   <Link to={`/posts/${post.slug}`} className="no-underline">
                     <h3 className="text-sm md:text-xl font-bold text-[#EDE9FE] hover:underline hover:decoration-2 hover:decoration-blue-300">
                       {post.title}
@@ -79,9 +79,10 @@ export function PostList() {
                     {formatDateToLong(post.createdAt)}
                   </p>
                 </div>
+
                 <Link
                   to={`/posts/${post.slug}`}
-                  className="flex items-center gap-2 font-bold mt-4 text-sm text-white hover:text-blue-300 hover:underline"
+                  className="flex items-center gap-2 font-bold mt-auto min-h-14 text-sm text-white hover:text-blue-300 hover:underline"
                 >
                   Ler mais
                   <ArrowRight size={16} />
