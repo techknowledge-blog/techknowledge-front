@@ -26,7 +26,7 @@ export function Community() {
             <p className="text-base font-semibold max-w-md md:text-lg lg:text-2xl lg:max-w-[573px]">
               Um espaço feito para troca de ideias, networking e colaboração
               entre apaixonados por tecnologia. Fique de olho 👀 – coisas
-              incríveis estão a caminho!"
+              incríveis estão a caminho!
             </p>
 
             <p className="mt-8 font-bold text-blue-300">

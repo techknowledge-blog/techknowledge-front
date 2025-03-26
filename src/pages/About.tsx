@@ -100,10 +100,18 @@ export function About() {
               necessários para se destacarem no cenário global.
             </p>
             <div className="flex gap-4 mt-4">
-              <InstagramLogo size={24} />
-              <XLogo size={24} />
-              <LinkedinLogo size={24} />
-              <GithubLogo size={24} />
+              <a href="https://www.instagram.com/mikkaiser_/" target="_blank">
+                <InstagramLogo size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mikael-ribeiro/"
+                target="_blank"
+              >
+                <LinkedinLogo size={24} />
+              </a>
+              <a href="https://github.com/Mikkaiser" target="_blank">
+                <GithubLogo size={24} />
+              </a>
             </div>
           </div>
         </div>
@@ -134,10 +142,27 @@ export function About() {
               de trabalho.
             </p>
             <div className="flex gap-4 mt-4">
-              <InstagramLogo size={24} />
-              <XLogo size={24} />
-              <LinkedinLogo size={24} />
-              <GithubLogo size={24} />
+              <a
+                href="https://www.instagram.com/leticiadias.dev/"
+                target="_blank"
+              >
+                <InstagramLogo size={24} />
+              </a>
+
+              <a href="https://x.com/leticiadiasdev" target="_blank">
+                <XLogo size={24} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/leticia-dia/"
+                target="_blank"
+              >
+                <LinkedinLogo size={24} />
+              </a>
+
+              <a href="https://github.com/leticiadia" target="_blank">
+                <GithubLogo size={24} />
+              </a>
             </div>
           </div>
         </div>
