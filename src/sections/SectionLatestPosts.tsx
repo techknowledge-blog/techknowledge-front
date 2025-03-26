@@ -1,7 +1,6 @@
 import React from "react";
 
 import { PostPreview } from "../components/posts/postpreview/PostPreview";
-import { mockPost } from "../components/posts/mockPost";
 import { Button } from "../components/button/Button";
 
 export function SectionLatestPosts() {
@@ -11,7 +10,7 @@ export function SectionLatestPosts() {
         Artigos publicados recentes
       </h3>
 
-      <PostPreview posts={mockPost} />
+      <PostPreview />
 
       <div className="w-2/3 sm:w-1/3 mx-auto lg:mx-0">
         <Button label="Ver todos os artigos" href="/posts" />
