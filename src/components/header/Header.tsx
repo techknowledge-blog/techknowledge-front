@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navbar } from "../navbar/Navbar";
-
-import buttonLightMode from "../../assets/icons/buttonLightMode.svg";
-import LightIcon from "../../assets/icons/light-icon-mode.svg";
 import techknowledgeLogo from "../../assets/images/techknowledge-logo.svg";
 
 import styles from "./Header.module.css";
 import { Link } from "../../../node_modules/react-router/dist/production/index";
+import { ThemeContext } from "../../context/ThemeContext";
+import { Moon, Sun } from "@phosphor-icons/react";
 
 export function Header() {
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
+
   return (
     <header className="md:flex items-center justify-between pt-6">
       <Link to="/">
@@ -22,11 +23,9 @@ export function Header() {
       <Navbar />
 
       <div className="dark-light-mode md:flex md:items-center gap-2 hidden md:visible">
-        <img
-          src={buttonLightMode}
-          alt="Botão para ativar o modo claro e escuro da página"
-        />
-        <img src={LightIcon} alt="Icone no formato de um sol." />
+        <button onClick={toggleDarkMode}>
+          {darkMode ? <Moon size={24} /> : <Sun size={24} color="black" />}
+        </button>
       </div>
     </header>
   );
