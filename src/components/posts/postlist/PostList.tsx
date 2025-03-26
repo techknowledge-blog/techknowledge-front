@@ -5,7 +5,7 @@ import { Link } from "../../../../node_modules/react-router/dist/production/inde
 import { formatDateToLong } from "../../../utils/formatDate";
 import { getPosts } from "../../../services/postsService";
 
-interface PostType {
+export interface PostType {
   id: number;
   title: string;
   previewContent: string;
