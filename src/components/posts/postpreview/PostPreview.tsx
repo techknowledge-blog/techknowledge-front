@@ -60,7 +60,7 @@ export function PostPreview() {
                 className="w-[18rem] h-[10rem] rounded-lg object-cover sm:w-[16rem] sm:h-[9rem] lg:w-[18rem] lg:h-[10rem]"
                 alt={`Capa do post ${post.title}`}
               />
-              <p className="w-[7.25rem] h-6 bg-[#EDE9FE] rounded flex items-center justify-center text-black font-semibold text-xs mt-4 mx-auto lg:mx-0">
+              <p className="w-[7.25rem] h-6 dark:bg-[#EDE9FE] bg-[#93C5FD] rounded flex items-center justify-center text-black font-semibold text-xs mt-4 mx-auto lg:mx-0">
                 {post.category.name}
               </p>
             </div>
@@ -68,16 +68,16 @@ export function PostPreview() {
             <div className="text-center lg:text-left mt-4">
               <Link
                 to={`/posts/${post.slug}`}
-                className="font-semibold text-[#EDE9FE] text-base hover:underline w-[16rem] sm:w-[14rem] lg:w-[14rem]"
+                className="font-semibold dark:text-[#EDE9FE] text-blue-500 text-base hover:underline w-[16rem] sm:w-[14rem] lg:w-[14rem]"
               >
                 {post.title}
               </Link>
 
-              <p className="text-[#C6D1F2] text-sm leading-relaxed w-[16rem] sm:w-[14rem] lg:w-[16rem] mx-auto mb-4 lg:mx-0 mt-4 sm:mb-6 md:min-h-[18vh] lg:min-h-[16vh] xl:min-h-[32vh] 2xl:min-h-[16vh]">
+              <p className="dark:text-[#C6D1F2] text-[#62748E] text-sm leading-relaxed w-[16rem] sm:w-[14rem] lg:w-[16rem] mx-auto mb-4 lg:mx-0 mt-4 sm:mb-6 md:min-h-[18vh] lg:min-h-[16vh] xl:min-h-[32vh] 2xl:min-h-[16vh]">
                 {post.previewContent}
               </p>
 
-              <p className="text-[#EDE9FE] font-bold text-base">
+              <p className="dark:text-[#EDE9FE] text-blue-500 font-bold text-base">
                 {formatDateToLong(post.createdAt)}
               </p>
             </div>

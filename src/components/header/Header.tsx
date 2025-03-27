@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
-import { Navbar } from "../navbar/Navbar";
-import techknowledgeLogo from "../../assets/images/techknowledge-logo.svg";
-
-import styles from "./Header.module.css";
-import { Link } from "../../../node_modules/react-router/dist/production/index";
-import { ThemeContext } from "../../context/ThemeContext";
 import { Moon, Sun } from "@phosphor-icons/react";
+import { Link } from "../../../node_modules/react-router/dist/production/index";
+
+import { Navbar } from "../navbar/Navbar";
+import { ThemeContext } from "../../context/ThemeContext";
+import styles from "./Header.module.css";
+
+import techknowledgeLogoDark from "../../assets/images/techknowledge-logo-darkmode.svg";
+import techknowledgeLogoLight from "../../assets/images/techknowledge-logo-lightmode.svg";
 
 export function Header() {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext);
@@ -13,11 +15,19 @@ export function Header() {
   return (
     <header className="md:flex items-center justify-between pt-6">
       <Link to="/">
-        <img
-          src={techknowledgeLogo}
-          alt="Está escrito o nome Techknowledge na cor branca."
-          className={styles["logo"]}
-        />
+        {darkMode ? (
+          <img
+            src={techknowledgeLogoDark}
+            alt="Está escrito o nome Techknowledge na cor branca."
+            className={styles["logo"]}
+          />
+        ) : (
+          <img
+            src={techknowledgeLogoLight}
+            alt="Está escrito o nome Techknowledge na cor preta."
+            className={styles["logo"]}
+          />
+        )}
       </Link>
 
       <Navbar />
