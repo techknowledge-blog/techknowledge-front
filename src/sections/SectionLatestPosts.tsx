@@ -6,7 +6,7 @@ import { Button } from "../components/button/Button";
 export function SectionLatestPosts() {
   return (
     <section className="mt-16">
-      <h3 className="text-2xl font-bold leading-9 lg:leading-normal mb-4 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent w-full text-center md:text-4xl lg:text-left lg:w-[24rem]">
+      <h3 className="text-2xl font-bold leading-9 lg:leading-normal mb-4 dark:bg-gradient-to-r dark:from-white dark:to-blue-300 dark:bg-clip-text dark:text-transparent w-full text-center text-blue-500 md:text-4xl lg:text-left lg:w-[24rem]">
         Artigos publicados recentes
       </h3>
 

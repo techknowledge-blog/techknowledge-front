@@ -17,24 +17,28 @@ export function CardOurPurpose() {
           >
             <Icon
               size={32}
-              weight="bold"
-              className={
-                card.style.includes("text-black")
-                  ? "text-black"
-                  : "text-blue-300"
-              }
+              weight="regular"
+              className={`${
+                card.style.includes("dark:text-black")
+                  ? "dark:text-black"
+                  : "dark:text-blue-300 text-blue-500"
+              }`}
             />
             <h3
               className={`text-lg font-bold text-center lg:text-left ${
-                card.style.includes("text-black") ? "text-black" : "text-white"
+                card.style.includes("dark:text-black")
+                  ? "dark:text-black"
+                  : "dark:text-white"
               }`}
             >
               {card.title}
             </h3>
             <p
               className={`text-sm text-center lg:text-left ${
-                card.style.includes("text-black") ? "text-black" : "text-white"
-              }`}
+                card.style.includes("dark:text-black")
+                  ? "dark:text-black"
+                  : "dark:text-white"
+              } text-black`}
             >
               {card.content}
             </p>

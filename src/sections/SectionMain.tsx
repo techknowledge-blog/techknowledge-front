@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import ImageTecnologies from "../assets/images/technologies.png";
 import { CaretRight } from "@phosphor-icons/react";
 import { Link } from "../../node_modules/react-router/dist/production/index";
+import { ThemeContext } from "../context/ThemeContext";
+
+import ImageTecnologiesDark from "../assets/images/techknowledge-darkmode.png";
+import ImageTecnologiesLight from "../assets/images/tecnologies-lightmode.png";
 
 export function SectionMain() {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <section className="flex flex-col items-center gap-8 mt-8 lg:flex-row lg:justify-between">
       <div className="w-full md:w-3/4 lg:w-[34rem]">
-        <p className="text-2xl leading-9 lg:leading-normal text-center font-semibold md:text-4xl md:leading-[3rem] lg:text-5xl lg:text-left">
+        <p className="text-2xl leading-9 lg:leading-normal text-center font-semibold md:text-4xl md:leading-[3rem] lg:text-5xl lg:text-left dark:text-white text-[#62748E]">
           Um blog para compartilharmos conhecimento da área da{" "}
           <span className="text-blue-500">tecnologia</span>.
         </p>
@@ -36,11 +41,19 @@ export function SectionMain() {
       </div>
 
       <div>
-        <img
-          src={ImageTecnologies}
-          className="h-64 md:h-80 lg:h-96"
-          alt="Tecnologias"
-        />
+        {darkMode ? (
+          <img
+            src={ImageTecnologiesDark}
+            className="h-64 md:h-80 lg:h-96 object-cover"
+            alt="Tecnologias"
+          />
+        ) : (
+          <img
+            src={ImageTecnologiesLight}
+            className="h-64 md:h-80 lg:h-96 object-cover"
+            alt="Tecnologias"
+          />
+        )}
       </div>
     </section>
   );
