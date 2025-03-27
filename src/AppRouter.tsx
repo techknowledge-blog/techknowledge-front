@@ -8,6 +8,8 @@ import { About } from "./pages/About";
 import { Community } from "./pages/Community";
 import { Home } from "./pages/Home";
 import { Posts } from "./pages/Posts";
+import { TechLab } from "./pages/TechLab";
+import { Contact } from "./pages/Contact";
 
 export function AppRouter() {
   return (
@@ -15,8 +17,10 @@ export function AppRouter() {
       <Route path="/" element={<Home />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/posts" element={<Posts />}></Route>
-      <Route path="/post/:id" element={<Post />}></Route>
+      <Route path="/posts/:slug" element={<Post />}></Route>
+      <Route path="/techlab" element={<TechLab />}></Route>
       <Route path="/community" element={<Community />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
     </Routes>
   );
 }

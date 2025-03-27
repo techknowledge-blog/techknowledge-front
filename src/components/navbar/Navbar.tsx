@@ -12,7 +12,7 @@ export function Navbar() {
     { path: "/", label: "" },
     { path: "/about", label: "Sobre" },
     { path: "/posts", label: "Posts" },
-    { path: "/projects", label: "Projetos" },
+    { path: "/techlab", label: "TechLab" },
     { path: "/community", label: "Comunidade" },
   ];
 

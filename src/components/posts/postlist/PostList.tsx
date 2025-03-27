@@ -1,31 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { ArrowRight } from "../../../../node_modules/@phosphor-icons/react/dist/index";
 import { Link } from "../../../../node_modules/react-router/dist/production/index";
 import { formatDateToLong } from "../../../utils/formatDate";
+import { getPosts } from "../../../services/postsService";
 
-import { mockPost } from "../mockPost";
-
-interface PostType {
-  id: string;
+export interface PostType {
+  id: number;
   title: string;
-  summary: string;
-  link: string;
-  flag: string;
-  date: string;
-  category: string;
+  previewContent: string;
+  createdAt: string;
+  category: {
+    name: string;
+  };
+  slug: string;
 }
 
 export function PostList() {
+  const [posts, setPosts] = useState<PostType[]>([]);
+
+  useEffect(() => {
+    async function fetchPosts() {
+      try {
+        const data = await getPosts();
+
+        if (!Array.isArray(data)) {
+          throw new Error("Formato de dados inválido");
+        }
+
+        setPosts(data);
+      } catch (error) {
+        console.error("Erro ao buscar posts:", error);
+      }
+    }
+
+    fetchPosts();
+  }, []);
+
   function groupPostsByCategory(posts: PostType[]) {
     return posts.reduce<Record<string, PostType[]>>((acc, post) => {
-      acc[post.category] = acc[post.category] || [];
-      acc[post.category].push(post);
+      const categoryName = post.category.name;
+      acc[categoryName] = acc[categoryName] || [];
+      acc[categoryName].push(post);
       return acc;
     }, {});
   }
 
-  const postsByCategory = groupPostsByCategory(mockPost);
+  const postsByCategory = groupPostsByCategory(posts);
 
   return (
     <section className="flex flex-col gap-12 py-8">
@@ -43,30 +64,29 @@ export function PostList() {
             {posts.map((post) => (
               <li
                 key={post.id}
-                className="bg-[#1E293B] p-6 rounded-lg hover:bg-[#334155] transition w-[20rem] md:w-full"
+                className="bg-[#1E293B] p-6 rounded-lg hover:bg-[#334155] transition w-[20rem] md:w-full h-full flex flex-col"
               >
-                <div className="flex flex-col gap-4">
-                  <Link to={`/post/${post.id}`}>
-                    <a
-                      href="#"
-                      className="text-sm md:text-xl font-bold text-[#EDE9FE] no-underline hover:underline hover:decoration-2 hover:decoration-blue-300"
-                    >
+                <div className="flex flex-col gap-4 flex-grow">
+                  <Link to={`/posts/${post.slug}`} className="no-underline">
+                    <h3 className="text-sm md:text-xl font-bold text-[#EDE9FE] hover:underline hover:decoration-2 hover:decoration-blue-300">
                       {post.title}
-                    </a>
+                    </h3>
                   </Link>
-                  <p className="text-sm text-[#C6D1F2]">{post.summary}</p>
+                  <p className="text-sm text-[#C6D1F2]">
+                    {post.previewContent}
+                  </p>
                   <p className="text-xs text-[#9CA3AF] font-semibold">
-                    {formatDateToLong(post.date)}
+                    {formatDateToLong(post.createdAt)}
                   </p>
                 </div>
 
-                <a
-                  href={post.link}
-                  className="flex items-center gap-2 font-bold mt-4 text-sm text-white hover:text-blue-300 hover:underline"
+                <Link
+                  to={`/posts/${post.slug}`}
+                  className="flex items-center gap-2 font-bold mt-auto min-h-14 text-sm text-white hover:text-blue-300 hover:underline"
                 >
                   Ler mais
                   <ArrowRight size={16} />
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

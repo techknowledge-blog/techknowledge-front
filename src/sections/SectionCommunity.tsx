@@ -8,7 +8,7 @@ export function SectionCommunity() {
   return (
     <section className="mt-16">
       <div className="flex flex-col items-center gap-8">
-        <p className="text-xl font-bold text-center leading-7 lg:leading-normal w-full px-4 md:text-3xl md:w-[44.563rem]">
+        <p className="dark:text-white text-[#62748E] text-xl font-bold text-center leading-7 lg:leading-normal w-full px-4 md:text-3xl md:w-[44.563rem]">
           Acreditamos no poder que a{" "}
           <span className="text-blue-500">comunidade</span> tem de mudar vidas.
           Vem fazer parte da nossa comunidade!

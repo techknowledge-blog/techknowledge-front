@@ -1,8 +1,7 @@
 import React from "react";
-
 import ImageAstronaut from "../assets/images/astronaut.png";
 
-export function Community() {
+export function TechLab() {
   return (
     <div className="w-full flex flex-col items-center justify-center h-screen">
       <div className="flex items-center justify-center lg:justify-start w-full">
@@ -19,18 +18,18 @@ export function Community() {
 
           <div>
             <p className="text-base font-semibold mb-4 max-w-md md:text-lg lg:text-2xl lg:max-w-[573px]">
-              Estamos trabalhando para lançar nossa página de Comunidade no
-              próximo ano.
+              Estamos trabalhando para lançar nossa página de TechLab no ano de
+              2025.
             </p>
 
             <p className="text-base font-semibold max-w-md md:text-lg lg:text-2xl lg:max-w-[573px]">
-              Um espaço feito para troca de ideias, networking e colaboração
-              entre apaixonados por tecnologia. Fique de olho 👀 – coisas
-              incríveis estão a caminho!
+              Um espaço onde você encontrará nossos conteúdos, como podcasts,
+              vídeos, artigos mais populares e muito mais. Fique de olho 👀 –
+              coisas incríveis estão a caminho!
             </p>
 
             <p className="mt-8 font-bold text-blue-300">
-              #community #techknowledge #networking
+              #conteúdos #techknowledge #podcast #artigos
             </p>
           </div>
         </div>
