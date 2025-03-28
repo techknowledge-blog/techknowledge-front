@@ -37,14 +37,16 @@ export function Post() {
   return (
     <div className="px-4 sm:px-6 lg:px-8">
       <div className="prose prose-invert max-w-none mt-8">
-        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold dark:text-white text-black">
           {post.title}
         </h1>
-        <p className="font-bold text-sm sm:text-base">
+        <p className="font-bold text-sm sm:text-base dark:text-white text-[#62748E]">
           escrito por: {post.author.name}
         </p>
         <div className="mt-6">
-          <ReactMarkdown>{post.content}</ReactMarkdown>
+          <ReactMarkdown className="prose dark:prose-invert prose-h1:text-black dark:prose-h1:text-white max-w-none">
+            {post.content}
+          </ReactMarkdown>
         </div>
       </div>
     </div>

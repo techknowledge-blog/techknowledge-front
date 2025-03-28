@@ -52,7 +52,7 @@ export function PostList() {
     <section className="flex flex-col gap-12 py-8">
       {Object.entries(postsByCategory).map(([category, posts]) => (
         <div key={category} className="category-section">
-          <h2 className="text-2xl font-semibold text-[#EDE9FE] mb-6">
+          <h2 className="text-2xl font-semibold dark:text-[#EDE9FE] text-blue-500 mb-6">
             {category}
           </h2>
 
@@ -64,25 +64,25 @@ export function PostList() {
             {posts.map((post) => (
               <li
                 key={post.id}
-                className="bg-[#1E293B] p-6 rounded-lg hover:bg-[#334155] transition w-[20rem] md:w-full h-full flex flex-col"
+                className="dark:bg-[#1E293B] bg-[#93C5FD] p-6 rounded-lg dark:hover:bg-[#334155] hover:bg-[#71b4ff] transition w-[20rem] md:w-full h-full flex flex-col"
               >
                 <div className="flex flex-col gap-4 flex-grow">
                   <Link to={`/posts/${post.slug}`} className="no-underline">
-                    <h3 className="text-sm md:text-xl font-bold text-[#EDE9FE] hover:underline hover:decoration-2 hover:decoration-blue-300">
+                    <h3 className="text-sm md:text-xl font-bold dark:text-[#EDE9FE] text-black hover:underline hover:decoration-2 dark:hover:decoration-blue-300 hover:decoration-black">
                       {post.title}
                     </h3>
                   </Link>
-                  <p className="text-sm text-[#C6D1F2]">
+                  <p className="text-sm dark:text-[#C6D1F2] text-black">
                     {post.previewContent}
                   </p>
-                  <p className="text-xs text-[#9CA3AF] font-semibold">
+                  <p className="text-xs dark:text-[#9CA3AF] text-black font-semibold">
                     {formatDateToLong(post.createdAt)}
                   </p>
                 </div>
 
                 <Link
                   to={`/posts/${post.slug}`}
-                  className="flex items-center gap-2 font-bold mt-auto min-h-14 text-sm text-white hover:text-blue-300 hover:underline"
+                  className="flex items-center gap-2 font-bold mt-auto min-h-14 text-sm dark:text-white text-black dark:hover:text-blue-300 hover:underline"
                 >
                   Ler mais
                   <ArrowRight size={16} />
