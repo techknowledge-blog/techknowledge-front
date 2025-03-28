@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import ImageEvent from "../assets/images/events.png";
+import ImageEventDark from "../assets/images/events.png";
+import ImageEventLight from "../assets/images/events-lightmode.png";
+
 import { Button } from "../components/button/Button";
+import { ThemeContext } from "../context/ThemeContext";
 
 export function SectionEvents() {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <section className="flex flex-col gap-8 mt-16 md:flex-col lg:flex-row lg:gap-16 lg:items-center lg:justify-center">
       <div className="flex flex-col gap-4 w-full items-center text-center md:w-full lg:w-1/2 lg:items-start lg:text-left">
@@ -33,11 +38,19 @@ export function SectionEvents() {
       </div>
 
       <div className="w-full flex justify-center lg:w-1/2">
-        <img
-          src={ImageEvent}
-          className="h-80 md:h-[34rem] lg:h-96 object-cover"
-          alt="Evento"
-        />
+        {darkMode ? (
+          <img
+            src={ImageEventDark}
+            className="h-80 md:h-[34rem] lg:h-96 object-cover"
+            alt="Evento"
+          />
+        ) : (
+          <img
+            src={ImageEventLight}
+            className="h-80 md:h-[34rem] lg:h-96 object-cover"
+            alt="Evento"
+          />
+        )}
       </div>
     </section>
   );

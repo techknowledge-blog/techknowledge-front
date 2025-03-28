@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import ImageFounders from "../assets/images/founders.png";
+import ImageFoundersDark from "../assets/images/founders-darkmode.png";
+import ImageFoundersLight from "../assets/images/founders-lightmode.png";
+
 import { Button } from "../components/button/Button";
+import { ThemeContext } from "../context/ThemeContext";
 
 export function SectionAbout() {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <section className="flex flex-col items-center lg:items-start mt-16">
       <div className="w-full lg:w-auto">
@@ -33,11 +38,19 @@ export function SectionAbout() {
         </div>
 
         <div className="flex justify-center">
-          <img
-            src={ImageFounders}
-            className="h-56 md:h-80 lg:h-96"
-            alt="Fundadores"
-          />
+          {darkMode ? (
+            <img
+              src={ImageFoundersDark}
+              className="h-56 md:h-80 lg:h-96"
+              alt="Fundadores"
+            />
+          ) : (
+            <img
+              src={ImageFoundersLight}
+              className="h-56 md:h-80 lg:h-96"
+              alt="Fundadores"
+            />
+          )}
         </div>
       </div>
     </section>
