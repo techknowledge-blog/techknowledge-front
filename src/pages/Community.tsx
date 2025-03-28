@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import ImageAstronaut from "../assets/images/astronaut.png";
+import ImageAstronautDark from "../assets/images/astronaut.png";
+import ImageAstrounautLight from "../assets/images/astronaut-lightmode.png";
+
+import { ThemeContext } from "../context/ThemeContext";
 
 export function Community() {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <div className="w-full flex flex-col items-center justify-center h-screen">
       <div className="flex items-center justify-center lg:justify-start w-full">
@@ -13,32 +18,40 @@ export function Community() {
 
       <div className="flex flex-col items-center lg:flex-row lg:items-center lg:justify-between w-full max-w-screen-lg">
         <div className="text-center lg:text-left lg:mr-8 flex flex-col items-center lg:items-start">
-          <h2 className="text-xl font-bold mb-8 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent md:text-2xl lg:text-4xl">
+          <h2 className="text-xl font-bold mb-8 dark:bg-gradient-to-r dark:from-white dark:to-blue-300 dark:bg-clip-text dark:text-transparent text-blue-500 md:text-2xl lg:text-4xl">
             Aguardem Novidades!
           </h2>
 
           <div>
-            <p className="text-base font-semibold mb-4 max-w-md md:text-lg lg:text-2xl lg:max-w-[573px]">
+            <p className="text-base font-semibold mb-4 max-w-md md:text-lg lg:text-2xl lg:max-w-[573px] dark:text-white text-[#62748E]">
               Estamos trabalhando para lançar nossa página de Comunidade no
               próximo ano.
             </p>
 
-            <p className="text-base font-semibold max-w-md md:text-lg lg:text-2xl lg:max-w-[573px]">
+            <p className="text-base font-semibold max-w-md md:text-lg lg:text-2xl lg:max-w-[573px] dark:text-white text-[#62748E]">
               Um espaço feito para troca de ideias, networking e colaboração
               entre apaixonados por tecnologia. Fique de olho 👀 – coisas
               incríveis estão a caminho!
             </p>
 
-            <p className="mt-8 font-bold text-blue-300">
+            <p className="mt-8 font-bold dark:text-blue-300 text-blue-500">
               #community #techknowledge #networking
             </p>
           </div>
         </div>
-        <img
-          src={ImageAstronaut}
-          alt="Astronauta"
-          className="mt-8 object-cover h-[200px] md:h-[300px] lg:mt-0 lg:h-[380px]"
-        />
+        {darkMode ? (
+          <img
+            src={ImageAstronautDark}
+            alt="Astronauta"
+            className="mt-8 object-cover h-[200px] md:h-[300px] lg:mt-0 lg:h-[380px]"
+          />
+        ) : (
+          <img
+            src={ImageAstrounautLight}
+            alt="Astronauta"
+            className="mt-8 object-cover h-[200px] md:h-[300px] lg:mt-0 lg:h-[380px]"
+          />
+        )}
       </div>
     </div>
   );
