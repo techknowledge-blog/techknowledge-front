@@ -37,21 +37,21 @@ export function Contact() {
       <Section title="">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
           <div className="flex flex-col justify-between min-h-full">
-            <h3 className="text-2xl font-bold mb-6 self-stretch">
+            <h3 className="text-2xl font-bold mb-6 self-stretch dark:text-white text-black">
               Nos convide para o seu evento!
             </h3>
             <div>
-              <p className="mb-6 max-w-lg">
+              <p className="mb-6 max-w-lg dark:text-white text-black">
                 Somos apaixonados por tecnologia, comunidade e educação. Com
                 experiência em desenvolvimento web, ensino e eventos, já
                 compartilhamos nossos conhecimentos em meetups e podcasts.
               </p>
-              <p className="mb-6 max-w-lg">
+              <p className="mb-6 max-w-lg dark:text-white text-black">
                 Se você busca palestrantes engajados para falar sobre inovação,
                 carreira na tecnologia, desenvolvimento web e muito mais,
                 estamos prontos para contribuir com o seu evento!
               </p>
-              <p className="font-bold">
+              <p className="font-bold dark:text-white text-black">
                 📩 Entre em contato e vamos conversar!
               </p>
             </div>
@@ -68,13 +68,13 @@ export function Contact() {
       <Section title="Eventos">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
           <div>
-            <p className="mb-6 max-w-lg">
+            <p className="mb-6 max-w-lg dark:text-white text-black">
               Tivemos a incrível oportunidade de palestrar em meetups como o{" "}
               <strong>Meetup Space Squad em Maceió - Alagoas</strong> e{" "}
               <strong>Aracaju - Sergipe</strong>, onde compartilhamos nossos
               conhecimentos e experiências com a comunidade tech.
             </p>
-            <p className="mb-6 max-w-lg">
+            <p className="mb-6 max-w-lg dark:text-white text-black">
               Para nós, foi uma experiência enriquecedora e gratificante,
               fortalecendo nosso compromisso em levar conteúdo de qualidade e
               contribuir para o crescimento do ecossistema tecnológico.
