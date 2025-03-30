@@ -1,0 +1,14 @@
+services:
+  app:
+    container_name: techknowledge-front-container
+    image:  mikkaiserdev/techknowledge-front:${IMAGE_TAG}
+    ports:
+      - "8080:80"
+    restart: always
+    networks:
+      - techknowledge-network
+
+
+networks:
+  techknowledge-network:
+    external: true
