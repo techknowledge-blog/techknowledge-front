@@ -23,7 +23,6 @@ export function Post() {
 
     async function loadPost() {
       const post = await getPostBySlug(slug);
-      console.log("post: ", post);
       setPost(post);
     }
 
