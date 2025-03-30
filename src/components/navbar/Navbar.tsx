@@ -5,7 +5,7 @@ import MenuHamburgerDark from "../../assets/icons/menu.svg";
 import CloseLight from "../../assets/icons/close-light.svg";
 import MenuHamburgerLight from "../../assets/images/menu-hamburger-lightmode.png";
 
-import { Link } from "../../../node_modules/react-router/dist/production/index";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/ThemeContext";
 
 export function Navbar() {

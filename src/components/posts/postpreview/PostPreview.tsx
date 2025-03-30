@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "../../../../node_modules/react-router/dist/production/index";
+import { Link } from "react-router-dom";
 import { formatDateToLong } from "../../../utils/formatDate";
 import { PostType } from "../postlist/PostList";
 import { getPosts } from "../../../services/postsService";

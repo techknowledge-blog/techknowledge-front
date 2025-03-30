@@ -1,6 +1,6 @@
 import React from "react";
-import { CaretRight } from "../../../node_modules/@phosphor-icons/react/dist/index";
-import { Link } from "../../../node_modules/react-router/dist/production/index";
+import { CaretRight } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 interface ButtonProps {
   label: string;

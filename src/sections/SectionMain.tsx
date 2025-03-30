@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { CaretRight } from "@phosphor-icons/react";
-import { Link } from "../../node_modules/react-router/dist/production/index";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 
 import ImageTechnologiesDark from "../assets/images/technologies-darkmode.png";

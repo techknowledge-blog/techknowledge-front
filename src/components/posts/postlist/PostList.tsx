@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { ArrowRight } from "../../../../node_modules/@phosphor-icons/react/dist/index";
-import { Link } from "../../../../node_modules/react-router/dist/production/index";
+import { ArrowRight } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 import { formatDateToLong } from "../../../utils/formatDate";
 import { getPosts } from "../../../services/postsService";
 
