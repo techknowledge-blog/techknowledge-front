@@ -8,7 +8,7 @@ services:
     networks:
       - techknowledge-network
 
-
 networks:
   techknowledge-network:
     external: true
+    name: techknowledge-network
