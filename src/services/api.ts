@@ -7,4 +7,4 @@ export const api = axios.create({
   },
 });
 
-console.log("URL da API:", import.meta.env.BASE_URL);
+// console.log("URL da API:", import.meta.env.VITE_API_URL);
