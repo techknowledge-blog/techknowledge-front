@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "../node_modules/react-router/dist/production/index";
+import { BrowserRouter } from "react-router-dom";
 
 import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";

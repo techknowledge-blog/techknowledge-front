@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Moon, Sun } from "@phosphor-icons/react";
-import { Link } from "../../../node_modules/react-router/dist/production/index";
+import { Link } from "react-router-dom";
 
 import { Navbar } from "../navbar/Navbar";
 import { ThemeContext } from "../../context/ThemeContext";

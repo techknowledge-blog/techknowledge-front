@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { Button } from "../components/button/Button";
 
-import ImageCommunity from "../assets/images/community.png";
+import ImageCommunityDark from "../assets/images/community.png";
+import ImageCommunityLight from "../assets/images/community-lightmode.png";
+import { ThemeContext } from "../context/ThemeContext";
 
 export function SectionCommunity() {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <section className="mt-16">
       <div className="flex flex-col items-center gap-8">
@@ -14,11 +18,19 @@ export function SectionCommunity() {
           Vem fazer parte da nossa comunidade!
         </p>
 
-        <img
-          src={ImageCommunity}
-          className="h-48 w-auto md:h-[28rem]"
-          alt="Comunidade"
-        />
+        {darkMode ? (
+          <img
+            src={ImageCommunityDark}
+            className="h-48 w-auto md:h-[28rem]"
+            alt="Comunidade"
+          />
+        ) : (
+          <img
+            src={ImageCommunityLight}
+            className="h-48 w-auto md:h-[28rem]"
+            alt="Comunidade"
+          />
+        )}
 
         <div className="w-2/3 sm:w-1/3 mx-auto lg:mx-0">
           <Button label="Entrar na comunidade" href="/community" />

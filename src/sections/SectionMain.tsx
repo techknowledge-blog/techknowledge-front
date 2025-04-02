@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 
 import { CaretRight } from "@phosphor-icons/react";
-import { Link } from "../../node_modules/react-router/dist/production/index";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 
-import ImageTecnologiesDark from "../assets/images/techknowledge-darkmode.png";
-import ImageTecnologiesLight from "../assets/images/tecnologies-lightmode.png";
+import ImageTechnologiesDark from "../assets/images/technologies-darkmode.png";
+import ImageTechnologiesLight from "../assets/images/technologies-lightmode.png";
 
 export function SectionMain() {
   const { darkMode } = useContext(ThemeContext);
@@ -43,13 +43,13 @@ export function SectionMain() {
       <div>
         {darkMode ? (
           <img
-            src={ImageTecnologiesDark}
+            src={ImageTechnologiesDark}
             className="h-64 md:h-80 lg:h-96 object-cover"
             alt="Tecnologias"
           />
         ) : (
           <img
-            src={ImageTecnologiesLight}
+            src={ImageTechnologiesLight}
             className="h-64 md:h-80 lg:h-96 object-cover"
             alt="Tecnologias"
           />

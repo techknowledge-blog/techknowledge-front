@@ -13,7 +13,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
   XLogo,
-} from "../../node_modules/@phosphor-icons/react/dist/index";
+} from "@phosphor-icons/react";
 
 import { ThemeContext } from "../context/ThemeContext";
 
