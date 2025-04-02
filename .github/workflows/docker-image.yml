@@ -19,7 +19,7 @@ jobs:
         run: echo "timestamp=$(date +%s%3N)" >> $GITHUB_OUTPUT && echo "::set-output name=timestamp::$(date +%s%3N)"
       
       - name: Build the Docker image      
-        run: docker build . --file Dockerfile --tag techknowledge-front:${{ steps.timestamp.outputs.timestamp }}
+        run: docker build . --file Dockerfile --tag techknowledge-front:${{ steps.timestamp.outputs.timestamp }} --build-arg VITE_API_URL=${{ secrets.PROD_API_URL }}
       
       - name: Login to Docker Hub      
         run: echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin    
