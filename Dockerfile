@@ -1,6 +1,11 @@
 # Use the official Node.js image as the base image
 FROM node:18-alpine AS build
 
+
+# Accept build-time variable for VITE_API_URL
+ARG VITE_API_URL
+ENV VITE_API_URL=${VITE_API_URL}
+
 # Set the working directory
 WORKDIR /app
 
