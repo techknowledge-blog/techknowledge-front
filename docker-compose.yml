@@ -4,11 +4,13 @@ services:
     image:  mikkaiserdev/techknowledge-front:${IMAGE_TAG}
     ports:
       - "8080:80"
+    environment:
+      - VITE_API_URL=${VITE_API_URL}
     restart: always
     networks:
       - techknowledge-network
 
-
 networks:
   techknowledge-network:
     external: true
+    name: techknowledge-network
