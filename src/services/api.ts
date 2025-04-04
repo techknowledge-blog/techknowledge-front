@@ -6,5 +6,3 @@ export const api = axios.create({
     "Content-Type": "application/json",
   },
 });
-
-console.log("URL da API:", import.meta.env.VITE_API_URL);
