@@ -21,6 +21,10 @@ export default {
           500: "#A78BFA",
         },
       },
+      screens: {
+        "lg-custom": "912px",
+        "md-custom": "853px",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
