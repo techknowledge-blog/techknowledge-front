@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import ImageFrameVideo from "../assets/images/frame-video.png";
+import ImageTechknowlege from "../assets/images/about-techknowledge.png";
 import ImageLogoTechKnowledge from "../assets/images/techknowledge-logo.png";
 import ImageLogoTechknowledgeLight from "../assets/images/logo-large-light.png";
 import ImageMikaelAbout from "../assets/images/mikael-about.png";
@@ -27,15 +27,15 @@ export function About() {
           Sobre
         </h1>
 
-        <div className="bg-[#93C5FD] w-full h-[424px] mt-8 flex flex-col items-center rounded">
+        <div className="bg-[#93C5FD] w-full sm:h-[300px] md:h-[424px] mt-8 flex flex-col items-center rounded">
           <p className="mt-8 w-64 text-lg font-bold text-center text-black sm:w-96 sm:text-xl">
             Vem conhecer um pouco da história por trás do surgimento do blog
             TechKnowledge.
           </p>
           <img
-            src={ImageFrameVideo}
+            src={ImageTechknowlege}
             alt=""
-            className="h-[280px] mt-6 sm:h-[380px] object-cover"
+            className="sm:h-[180px] md:h-[280px] lg:h-[320px] my-10 md:mt-16 lg:mt-8 object-cover px-4"
           />
         </div>
       </div>
