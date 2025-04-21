@@ -4,8 +4,7 @@ import { getPostBySlug } from "../../../services/postsService";
 import ReactMarkdown from "react-markdown";
 import { formatDateToCustomFormat } from "../../../utils/formatDate";
 
-import ImageLeticiaAuthor from "../../../assets/images/leticia.jpeg";
-import ImageMikaelAuthor from "../../../assets/images/mikael.jpeg";
+import { mockAuthor } from "../mockAuthor";
 interface PostProps {
   id: number;
   title: string;
@@ -19,6 +18,9 @@ interface PostProps {
 
 export function Post() {
   const [post, setPost] = useState<PostProps>();
+  const authorInfo = mockAuthor.find(
+    (author) => author.name === post?.author.name
+  );
 
   useEffect(() => {
     const path = window.location.pathname;
@@ -50,24 +52,33 @@ export function Post() {
           {post.title}
         </h1>
 
-        <div className="flex items-center gap-2">
-          <img
-            src={
-              post.author.name === "Leticia Dias"
-                ? ImageLeticiaAuthor
-                : ImageMikaelAuthor
-            }
-            className="w-10 h-10 border-2 border-solid dark:border-blue-300 border-blue-500 rounded-full object-cover"
-          />
-          <p className="font-bold text-sm sm:text-base dark:text-white text-[#62748E]">
-            escrito por: {post.author.name}
-          </p>
-        </div>
-
-        <div className="mt-2">
+        <div className="mt-8">
           <ReactMarkdown className="prose dark:prose-invert prose-h1:text-black dark:prose-h1:text-white max-w-none">
             {post.content}
           </ReactMarkdown>
+        </div>
+      </div>
+
+      <div className="mt-10">
+        <p className="text-2xl font-bold dark:text-white text-black">
+          Post Autor
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8 mt-8">
+          <img
+            src={authorInfo?.image}
+            alt={post.author.name}
+            className="w-32 h-32 sm:w-40 sm:h-40 border-4 border-solid dark:border-blue-300 border-blue-500 rounded-full object-cover"
+          />
+
+          <div className="text-center sm:text-left">
+            <p className="text-xl font-semibold dark:text-white text-black mb-2">
+              {post.author.name}
+            </p>
+            <p className="text-base dark:text-white text-black">
+              {authorInfo?.description}
+            </p>
+          </div>
         </div>
       </div>
     </div>
