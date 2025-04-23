@@ -2,6 +2,7 @@ import image1 from "../../assets/images/faz-funcionar-e-depois-melhora.jpeg";
 import image2 from "../../assets/images/olimpiada-do-conhecimento.jpeg";
 import image3 from "../../assets/images/techknowledge.jpeg";
 import image4 from "../../assets/images/thumbnail.png";
+import image5 from "../../assets/images/challenge-shopping-cart.png";
 
 export const mockPost = [
   {
@@ -68,5 +69,9 @@ export const mockPost = [
     date: "2024-11-20",
     category: "techknowledge",
     author: "Leticia Dias",
+  },
+  {
+    id: 6,
+    coverImage: image5,
   },
 ];
