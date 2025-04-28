@@ -68,13 +68,18 @@ export function PostList() {
               >
                 <div className="flex flex-col gap-4 flex-grow">
                   <Link to={`/posts/${post.slug}`} className="no-underline">
-                    <h3 className="text-sm md:text-xl font-bold dark:text-[#EDE9FE] text-black hover:underline hover:decoration-2 dark:hover:decoration-blue-300 hover:decoration-black">
+                    <h3 className="lg:w-[28rem] md:w-[16rem] text-sm md:text-xl font-bold dark:text-[#EDE9FE] text-black hover:underline hover:decoration-2 dark:hover:decoration-blue-300 hover:decoration-black">
                       {post.title}
                     </h3>
                   </Link>
-                  <p className="text-sm dark:text-[#C6D1F2] text-black">
+                  <p
+                    className={`text-sm dark:text-[#C6D1F2] text-black ${
+                      posts.length === 1 ? "min-h-0" : "min-h-[8vh]"
+                    }`}
+                  >
                     {post.previewContent}
                   </p>
+
                   <p className="text-xs dark:text-[#9CA3AF] text-black font-semibold">
                     {formatDateToLong(post.createdAt)}
                   </p>
