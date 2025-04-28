@@ -1,6 +1,7 @@
 import image1 from "../../assets/images/leticia.jpeg";
 import image2 from "../../assets/images/mikael.jpeg";
 import image3 from "../../assets/images/joao-jacinto.jpeg";
+import image4 from "../../assets/images/monique-campos.jpeg";
 
 export const mockAuthor = [
   {
@@ -23,5 +24,12 @@ export const mockAuthor = [
     description:
       "Me chamo João Jacinto. Atualmente sou engenheiro de software no Itaú Unibanco. Sou cristão, gosto muito de animais e faço musculação!",
     image: image3,
+  },
+  {
+    id: 4,
+    name: "Monique Campos",
+    description:
+      "Sou Monique Campos, desenvolvedora frontend com foco em Angular. Gosto de transformar ideias em interfaces funcionais e intuitivas, sempre buscando evoluir e aprender mais a cada projeto.",
+    image: image4,
   },
 ];
