@@ -2,6 +2,7 @@ import image1 from "../../assets/images/leticia.jpeg";
 import image2 from "../../assets/images/mikael.jpeg";
 import image3 from "../../assets/images/joao-jacinto.jpeg";
 import image4 from "../../assets/images/monique-campos.jpeg";
+import image5 from "../../assets/images/leonardo.jpeg";
 
 export const mockAuthor = [
   {
@@ -31,5 +32,12 @@ export const mockAuthor = [
     description:
       "Sou Monique Campos, desenvolvedora frontend com foco em Angular. Gosto de transformar ideias em interfaces funcionais e intuitivas, sempre buscando evoluir e aprender mais a cada projeto.",
     image: image4,
+  },
+  {
+    id: 5,
+    name: "Leonardo Henrique",
+    description:
+      " E aí! Sou o Leonardo Henrique, mas muita gente me conhece como “Leozinho do Front” — culpa da minha paixão por Front-End. Trabalho como desenvolvedor Full Stack, com bastante experiência em Angular, um carinho especial por React e, agora, me aventurando com Vue. Curto demais jogos e animes, e um dia ainda quero me aventurar na área de games.",
+    image: image5,
   },
 ];

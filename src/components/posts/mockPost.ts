@@ -4,6 +4,7 @@ import image3 from "../../assets/images/techknowledge.jpeg";
 import image4 from "../../assets/images/thumbnail.png";
 import image5 from "../../assets/images/challenge-shopping-cart.png";
 import image6 from "../../assets/images/thumbnail-dev-frontend.jpg";
+import image7 from "../../assets/images/errando-que-se-aprende.jpg";
 
 export const mockPost = [
   {
@@ -78,5 +79,9 @@ export const mockPost = [
   {
     id: 7,
     coverImage: image6,
+  },
+  {
+    id: 8,
+    coverImage: image7,
   },
 ];
