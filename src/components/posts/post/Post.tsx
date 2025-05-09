@@ -53,7 +53,12 @@ export function Post() {
         </h1>
 
         <div className="mt-8">
-          <ReactMarkdown className="prose dark:prose-invert prose-h1:text-black dark:prose-h1:text-white max-w-none">
+          <ReactMarkdown
+            className=" prose dark:prose-invert prose-h1:text-black dark:prose-h1:text-white max-w-full 
+            prose-pre:overflow-x-auto prose-pre:max-w-full md:prose-pre:w-full sm-custom:prose-pre:w-[18rem] sm-extended:prose-pre:w-[30rem] xs-custom:prose-pre:w-[21rem] prose-pre:p-4 
+          prose-pre:bg-gray-800 prose-pre:text-white prose-pre:rounded-lg
+            prose-code:break-words prose-code:whitespace-pre-wrap"
+          >
             {post.content}
           </ReactMarkdown>
         </div>

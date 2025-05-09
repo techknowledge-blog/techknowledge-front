@@ -24,6 +24,9 @@ export default {
       screens: {
         "lg-custom": "912px",
         "md-custom": "853px",
+        "xs-custom": "412px",
+        "sm-extended": "540px",
+        "sm-custom": "344px",
       },
     },
   },
