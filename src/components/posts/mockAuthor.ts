@@ -3,6 +3,7 @@ import image2 from "../../assets/images/mikael.jpeg";
 import image3 from "../../assets/images/joao-jacinto.jpeg";
 import image4 from "../../assets/images/monique-campos.jpeg";
 import image5 from "../../assets/images/leonardo.jpeg";
+import image6 from "../../assets/images/pedro-miguel.png";
 
 export const mockAuthor = [
   {
@@ -39,5 +40,12 @@ export const mockAuthor = [
     description:
       " E aí! Sou o Leonardo Henrique, mas muita gente me conhece como “Leozinho do Front” — culpa da minha paixão por Front-End. Trabalho como desenvolvedor Full Stack, com bastante experiência em Angular, um carinho especial por React e, agora, me aventurando com Vue. Curto demais jogos e animes, e um dia ainda quero me aventurar na área de games.",
     image: image5,
+  },
+  {
+    id: 6,
+    name: "Pedro Miguel",
+    description:
+      "Sou Pedro Miguel, um desenvolvedor web que já lidou com uma pá de coisa, principalmente se essa coisa for baseada em JavaScript ou .NET. Meus hobbies incluem maratonar os livros da Leigh Bardugo e ser o porteiro do ouro no VALORANT, também sou chocólatra e viciado em café.",
+    image: image6,
   },
 ];
