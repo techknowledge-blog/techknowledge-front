@@ -10,7 +10,7 @@ export const mockAuthor = [
     id: 1,
     name: "Leticia Dias",
     description:
-      "Atualmente, trabalho como desenvolvedora full stack. Recentemente, atuei como desenvolvedora frontend react em um projeto e, anteriormente, fui professora no curso técnico de informática para internet, onde tinha como missão preparar os alunos para o mercado de trabalho.",
+      "Sou desenvolvedora full stack com foco atual em frontend e, nos últimos tempos, me aventurando no universo do design de interfaces. Já atuei como instrutora no curso técnico de informática, onde tive a missão de preparar alunos para o mercado de trabalho. Além do código, sou apaixonada por filmes, séries, animes e tenho um lugar especial no coração para o k-pop.",
     image: image1,
   },
   {
