@@ -73,7 +73,7 @@ export function Post() {
           Post Autor
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8 mt-8">
+        <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-8 mt-8">
           <img
             src={authorInfo?.image}
             alt={post.author.name}
