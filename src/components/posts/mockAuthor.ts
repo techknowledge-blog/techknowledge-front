@@ -4,6 +4,7 @@ import image3 from "../../assets/images/joao-jacinto.jpeg";
 import image4 from "../../assets/images/monique-campos.jpeg";
 import image5 from "../../assets/images/leonardo.jpeg";
 import image6 from "../../assets/images/pedro-miguel.png";
+import image7 from "../../assets/images/lucasalves.jpeg";
 
 export const mockAuthor = [
   {
@@ -47,5 +48,12 @@ export const mockAuthor = [
     description:
       "Sou Pedro Miguel, um desenvolvedor web que já lidou com uma pá de coisa, principalmente se essa coisa for baseada em JavaScript ou .NET. Meus hobbies incluem maratonar os livros da Leigh Bardugo e ser o porteiro do ouro no VALORANT, também sou chocólatra e viciado em café.",
     image: image6,
+  },
+  {
+    id: 7,
+    name: "Lucas Alves",
+    description:
+      "Sou o Lucas Alves, desenvolvedor mobile e trabalho com tecnologias como Swift, React Native e Flutter. Movido pela paixão em transformar desafios do mundo real em soluções tecnológicas inteligentes e funcionais, que melhorem a vida das pessoas.",
+    image: image7,
   },
 ];
