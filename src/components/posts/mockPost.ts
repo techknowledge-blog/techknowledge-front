@@ -1,8 +1,6 @@
 import image1 from "../../assets/images/faz-funcionar-e-depois-melhora.jpeg";
 import image2 from "../../assets/images/olimpiada-do-conhecimento.jpeg";
 import image3 from "../../assets/images/techknowledge.jpeg";
-import image4 from "../../assets/images/thumbnail.png";
-import image5 from "../../assets/images/challenge-shopping-cart.png";
 import image6 from "../../assets/images/thumbnail-dev-frontend.jpg";
 import image7 from "../../assets/images/errando-que-se-aprende.jpg";
 import image8 from "../../assets/images/pratique-como-ser-um-dev.jpg";
@@ -29,34 +27,26 @@ export const mockPost = [
   },
   {
     id: 5,
-    coverImage: image4,
-  },
-  {
-    id: 6,
-    coverImage: image5,
-  },
-  {
-    id: 7,
     coverImage: image6,
   },
   {
-    id: 8,
+    id: 6,
     coverImage: image7,
   },
   {
-    id: 9,
+    id: 7,
     coverImage: image8,
   },
   {
-    id: 10,
+    id: 8,
     coverImage: image9,
   },
   {
-    id: 11,
+    id: 9,
     coverImage: image10,
   },
   {
-    id: 15,
+    id: 12,
     coverImage: image11,
   },
 ];
