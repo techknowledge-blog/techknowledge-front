@@ -39,7 +39,7 @@ export const mockAuthor = [
     id: 5,
     name: "Leonardo Henrique",
     description:
-      " E aí! Sou o Leonardo Henrique, mas muita gente me conhece como “Leozinho do Front” — culpa da minha paixão por Front-End. Trabalho como desenvolvedor Full Stack, com bastante experiência em Angular, um carinho especial por React e, agora, me aventurando com Vue. Curto demais jogos e animes, e um dia ainda quero me aventurar na área de games.",
+      "E aí! Sou o Leonardo Henrique, mas muita gente me conhece como “Leozinho do Front” — culpa da minha paixão por Front-End. Trabalho como desenvolvedor Full Stack, com bastante experiência em Angular, um carinho especial por React e, agora, me aventurando com Vue. Curto demais jogos e animes, e um dia ainda quero me aventurar na área de games.",
     image: image5,
   },
   {
