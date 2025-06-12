@@ -7,6 +7,7 @@ import image8 from "../../assets/images/pratique-como-ser-um-dev.jpg";
 import image9 from "../../assets/images/criando-minhas-interfaces.jpg";
 import image10 from "../../assets/images/desenvolvimento-mobile-2025.jpg";
 import image11 from "../../assets/images/morar-fora-do-brasil-vale-a-pena.jpg";
+import image12 from "../../assets/images/primeiros-passos-como-freelancer.jpg";
 
 export const mockPost = [
   {
@@ -48,5 +49,9 @@ export const mockPost = [
   {
     id: 12,
     coverImage: image11,
+  },
+  {
+    id: 13,
+    coverImage: image12,
   },
 ];

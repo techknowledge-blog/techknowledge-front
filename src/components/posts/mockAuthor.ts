@@ -5,6 +5,7 @@ import image4 from "../../assets/images/monique-campos.jpeg";
 import image5 from "../../assets/images/leonardo.jpeg";
 import image6 from "../../assets/images/pedro-miguel.png";
 import image7 from "../../assets/images/lucasalves.jpeg";
+import image8 from "../../assets/images/alves-jhonata.png";
 
 export const mockAuthor = [
   {
@@ -55,5 +56,12 @@ export const mockAuthor = [
     description:
       "Sou o Lucas Alves, desenvolvedor mobile e trabalho com tecnologias como Swift, React Native e Flutter. Movido pela paixão em transformar desafios do mundo real em soluções tecnológicas inteligentes e funcionais, que melhorem a vida das pessoas.",
     image: image7,
+  },
+  {
+    id: 8,
+    name: "Alves Jhonata",
+    description:
+      "Com mais de uma década na área de tecnologia, transformei minha paixão por inovação em soluções tangíveis. Como especialista em Front-end e RPA, crio interfaces intuitivas e automatizo processos complexos, otimizando operações e elevando a experiência do usuário.",
+    image: image8,
   },
 ];
