@@ -40,7 +40,8 @@ jobs:
           host: ${{ secrets.PROD_SERVER_IP }}          
           username: ${{ secrets.SERVER_USERNAME }}          
           key: ${{ secrets.SERVER_PRIVATE_KEY }}          
-          script: |     
+          script: |  
+            echo "private key": ${{ secrets.SERVER_PRIVATE_KEY }}
             cd ~/projects/blog-techknowledge-front
             docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
             docker pull mikkaiserdev/techknowledge-front:${{ needs.build.outputs.timestamp }}
