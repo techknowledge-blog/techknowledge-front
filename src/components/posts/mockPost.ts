@@ -1,57 +1,57 @@
-import image1 from "../../assets/images/faz-funcionar-e-depois-melhora.jpeg";
-import image2 from "../../assets/images/olimpiada-do-conhecimento.jpeg";
-import image3 from "../../assets/images/techknowledge.jpeg";
-import image6 from "../../assets/images/thumbnail-dev-frontend.jpg";
-import image7 from "../../assets/images/errando-que-se-aprende.jpg";
-import image8 from "../../assets/images/pratique-como-ser-um-dev.jpg";
-import image9 from "../../assets/images/criando-minhas-interfaces.jpg";
-import image10 from "../../assets/images/desenvolvimento-mobile-2025.jpg";
-import image11 from "../../assets/images/morar-fora-do-brasil-vale-a-pena.jpg";
-import image12 from "../../assets/images/primeiros-passos-como-freelancer.jpg";
+import thumbFazFuncionar from "../../assets/images/thumbnails/faz-funcionar-e-depois-melhora.jpeg";
+import thumbOlimpiadaConhecimento from "../../assets/images/thumbnails/olimpiada-do-conhecimento.jpeg";
+import thumbTechknowledge from "../../assets/images/thumbnails/techknowledge.jpeg";
+import thumbDevFrontend from "../../assets/images/thumbnails/thumbnail-dev-frontend.jpg";
+import thumbErrandoAprende from "../../assets/images/thumbnails/errando-que-se-aprende.jpg";
+import thumbPratiqueComoDev from "../../assets/images/thumbnails/pratique-como-ser-um-dev.jpg";
+import thumbMinhasInterfaces from "../../assets/images/thumbnails/criando-minhas-interfaces.jpg";
+import thumbMobile2025 from "../../assets/images/thumbnails/desenvolvimento-mobile-2025.jpg";
+import thumbMorarFora from "../../assets/images/thumbnails/morar-fora-do-brasil-vale-a-pena.jpg";
+import thumbFreelancerPassos from "../../assets/images/thumbnails/primeiros-passos-como-freelancer.jpg";
 
 export const mockPost = [
   {
     id: 1,
-    coverImage: image1,
+    coverImage: thumbFazFuncionar,
   },
   {
     id: 2,
-    coverImage: image2,
+    coverImage: thumbOlimpiadaConhecimento,
   },
   {
     id: 3,
-    coverImage: image3,
+    coverImage: thumbTechknowledge,
   },
   {
     id: 4,
-    coverImage: image1,
+    coverImage: thumbFazFuncionar,
   },
   {
     id: 5,
-    coverImage: image6,
+    coverImage: thumbDevFrontend,
   },
   {
     id: 6,
-    coverImage: image7,
+    coverImage: thumbErrandoAprende,
   },
   {
     id: 7,
-    coverImage: image8,
+    coverImage: thumbPratiqueComoDev,
   },
   {
     id: 8,
-    coverImage: image9,
+    coverImage: thumbMinhasInterfaces,
   },
   {
     id: 9,
-    coverImage: image10,
+    coverImage: thumbMobile2025,
   },
   {
     id: 12,
-    coverImage: image11,
+    coverImage: thumbMorarFora,
   },
   {
     id: 13,
-    coverImage: image12,
+    coverImage: thumbFreelancerPassos,
   },
 ];
