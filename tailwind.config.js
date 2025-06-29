@@ -16,6 +16,7 @@ export default {
           400: "#8EC5FF",
           500: "#39A0ED",
           600: "#1D94F0",
+          700: "#2D93FF",
         },
         violet: {
           100: "#EDE9FE",
