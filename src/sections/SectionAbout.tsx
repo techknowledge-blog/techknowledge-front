@@ -12,12 +12,12 @@ export function SectionAbout() {
   return (
     <section className="flex flex-col items-center lg:items-start mt-16">
       <div className="w-full lg:w-auto">
-        <h2 className="text-2xl font-bold mb-4 dark:bg-gradient-to-r dark:from-white dark:to-blue-300 dark:bg-clip-text dark:text-transparent text-blue-500 text-center lg:text-left md:text-4xl">
-          Sobre nós
+        <h2 className="text-2xl font-bold mb-4 dark:bg-gradient-to-r dark:from-white dark:to-blue-400 dark:bg-clip-text dark:text-transparent text-blue-500 text-center lg:text-left md:text-4xl">
+          Fundadores
         </h2>
       </div>
 
-      <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-16">
+      <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-24">
         <div className="flex flex-col gap-3 lg:gap-16 text-center lg:text-left w-full md:w-1/2 lg:w-[20rem]">
           <div className="flex flex-col gap-6">
             <p className="font-medium leading-relaxed w-[20rem] mx-auto md:w-full dark:text-white text-[#62748E]">
@@ -33,7 +33,7 @@ export function SectionAbout() {
           </div>
 
           <div className="w-2/3 sm:w-3/5 mx-auto lg:mx-0 mb-4">
-            <Button label="Vem nos conhecer" href="/about" />
+            <Button label="Conhecer fundadores" href="/about" />
           </div>
         </div>
 
