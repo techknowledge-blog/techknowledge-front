@@ -16,14 +16,14 @@ export function SectionEvents() {
 
         <div>
           <div className="mt-4">
-            <p className="leading-relaxed w-[20rem] md:w-[70%] mx-auto lg:w-[38.5rem] dark:text-white text-[#62748E]">
+            <p className="leading-relaxed w-[18rem] md:w-[70%] mx-auto lg:w-[38.5rem] dark:text-white text-[#62748E]">
               Tem um evento de tecnologia chegando? Estamos prontos para
               compartilhar conhecimento, inspirar pessoas e discutir nossas
               experiências no mercado! Adoramos contribuir com conteúdos
               relevantes e experiências práticas.
             </p>
 
-            <p className="leading-relaxed w-[20rem] md:w-[70%] mx-auto mt-4 lg:w-[38.5rem] dark:text-white text-[#62748E]">
+            <p className="leading-relaxed w-[18rem] md:w-[70%] mx-auto mt-4 lg:w-[38.5rem] dark:text-white text-[#62748E]">
               Convide-nos para palestrar no seu evento e fazer parte dessa troca
               de ideias. Será um prazer colaborar com a sua comunidade!
             </p>

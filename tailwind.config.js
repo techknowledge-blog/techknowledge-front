@@ -42,8 +42,8 @@ export default {
         },
       },
       animation: {
-        bounceSoft: "bounceSoft 6s ease-in-out infinite",
-        shadowShrink: "shadowShrink 6s ease-in-out infinite",
+        bounceSoft: "bounceSoft 3s ease-in-out infinite",
+        shadowShrink: "shadowShrink 3s ease-in-out infinite",
       },
     },
   },

@@ -5,6 +5,7 @@ import { SectionEvents } from "../sections/SectionEvents";
 import { SectionLatestPosts } from "../sections/SectionLatestPosts";
 import { SectionMain } from "../sections/SectionMain";
 import { SectionOurPurpose } from "../sections/SectionOurPurpose";
+import { SectionTechLab } from "../sections/SectionTechLab";
 
 export function Home() {
   return (
@@ -13,6 +14,7 @@ export function Home() {
       <SectionOurPurpose />
       <SectionAbout />
       <SectionLatestPosts />
+      <SectionTechLab />
       <SectionEvents />
     </>
   );

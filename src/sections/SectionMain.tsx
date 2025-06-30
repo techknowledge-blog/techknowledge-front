@@ -11,7 +11,7 @@ export function SectionMain() {
       <div className="w-full md:w-3/4 lg:w-[34rem]">
         <p className="text-2xl leading-9 lg:leading-normal text-center font-semibold md:text-4xl md:leading-[3rem] lg:text-5xl lg:text-left dark:text-white text-[#62748E]">
           Um blog para compartilharmos conhecimento da área da{" "}
-          <span className="text-blue-500">tecnologia</span>.
+          <span className="text-blue-400">tecnologia</span>.
         </p>
 
         <div className="mt-6 flex flex-col items-center gap-4 lg:flex-row">
