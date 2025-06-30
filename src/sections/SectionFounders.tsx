@@ -44,7 +44,7 @@ export function SectionFounders() {
         ) : (
           <img
             src={ImageFoundersLight}
-            className="h-56 md:h-80"
+            className="h-56 md:h-[360px]"
             alt="Fundadores"
           />
         )}

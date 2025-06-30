@@ -6,8 +6,8 @@ import { Navbar } from "../navbar/Navbar";
 import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./Header.module.css";
 
-import techknowledgeLogoDark from "../../assets/images/techknowledge-logo-darkmode.svg";
-import techknowledgeLogoLight from "../../assets/images/techknowledge-logo-lightmode.svg";
+import techknowledgeLogoDark from "../../assets/images/new-logo-darkmode.svg";
+import techknowledgeLogoLight from "../../assets/images/new-logo-lightmode.svg";
 
 export function Header() {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext);

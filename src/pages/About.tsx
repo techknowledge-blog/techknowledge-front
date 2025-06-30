@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 
 import ImageTechknowlege from "../assets/images/about-techknowledge.png";
-import ImageLogoTechKnowledge from "../assets/images/techknowledge-logo.png";
-import ImageLogoTechknowledgeLight from "../assets/images/logo-large-light.png";
+import ImageLogoTechKnowledge from "../assets/images/new-logo-darkmode.svg";
+import ImageLogoTechknowledgeLight from "../assets/images/new-logo-lightmode.svg";
 import ImageMikaelAbout from "../assets/images/mikael-about.png";
 import ImageMikaelAboutLight from "../assets/images/mikael-about-light.png";
 import ImageLeticiaAbout from "../assets/images/leticia-about.png";
