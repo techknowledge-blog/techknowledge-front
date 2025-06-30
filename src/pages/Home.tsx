@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SectionAbout } from "../sections/SectionAbout";
+import { SectionFounders } from "../sections/SectionFounders";
 import { SectionEvents } from "../sections/SectionEvents";
 import { SectionLatestPosts } from "../sections/SectionLatestPosts";
 import { SectionMain } from "../sections/SectionMain";
@@ -13,7 +13,7 @@ export function Home() {
     <>
       <SectionMain />
       <SectionOurPurpose />
-      <SectionAbout />
+      <SectionFounders />
       <SectionLatestPosts />
       <SectionTechLab />
       <SectionKnowledgers />
