@@ -45,7 +45,7 @@ export function PostPreview() {
     .slice(0, 3);
 
   return (
-    <div className="flex flex-wrap items-start gap-8 mt-12 justify-center lg:justify-start">
+    <div className="flex flex-wrap items-start gap-12 mt-2 justify-center lg:justify-start">
       {sortedPosts.map((post) => {
         const mock = mockPost.find((mock) => mock.id === post.id);
 
@@ -60,7 +60,7 @@ export function PostPreview() {
                 className="w-[18rem] h-[10rem] rounded-lg object-cover sm:w-[16rem] sm:h-[9rem] lg:w-[18rem] lg:h-[10rem]"
                 alt={`Capa do post ${post.title}`}
               />
-              <p className="w-[7.25rem] h-6 dark:bg-[#EDE9FE] bg-[#93C5FD] rounded flex items-center justify-center text-black font-semibold text-xs mt-4 mx-auto lg:mx-0">
+              <p className="w-[7.25rem] h-6 dark:bg-blue-400 bg-[#93C5FD] rounded flex items-center justify-center text-black font-semibold text-xs mt-4 mx-auto lg:mx-0">
                 {post.category.name}
               </p>
             </div>

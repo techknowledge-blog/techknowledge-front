@@ -17,7 +17,7 @@ export function Navbar() {
     { path: "/about", label: "Sobre" },
     { path: "/posts", label: "Posts" },
     { path: "/techlab", label: "TechLab" },
-    { path: "/community", label: "Comunidade" },
+    { path: "/knowledgers", label: "Knowledgers" },
   ];
 
   return (

@@ -4,7 +4,7 @@ import { CardOurPurpose } from "../components/cardourpurpose/CardOurPurpose";
 export function SectionOurPurpose() {
   return (
     <section className="flex flex-col items-center lg:items-start mt-16">
-      <h2 className="text-2xl font-bold text-center lg:text-left dark:bg-gradient-to-r dark:from-white dark:to-blue-300 dark:bg-clip-text dark:text-transparent text-blue-500 md:text-4xl">
+      <h2 className="text-2xl font-bold text-center lg:text-left dark:bg-gradient-to-r dark:from-white dark:to-blue-400 dark:bg-clip-text dark:text-transparent text-blue-500 md:text-4xl">
         Nosso Propósito
       </h2>
 

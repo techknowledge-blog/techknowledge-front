@@ -13,8 +13,10 @@ export default {
         },
         blue: {
           300: "#00C2FF",
+          400: "#8EC5FF",
           500: "#39A0ED",
           600: "#1D94F0",
+          700: "#2D93FF",
         },
         violet: {
           100: "#EDE9FE",
@@ -27,6 +29,21 @@ export default {
         "xs-custom": "412px",
         "sm-extended": "540px",
         "sm-custom": "344px",
+      },
+      keyframes: {
+        bounceSoft: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+
+        shadowShrink: {
+          "0%, 100%": { transform: "translateX(-50%) scaleX(1)" },
+          "50%": { transform: "translateX(-50%) scaleX(0.6)", opacity: "0.15" },
+        },
+      },
+      animation: {
+        bounceSoft: "bounceSoft 3s ease-in-out infinite",
+        shadowShrink: "shadowShrink 3s ease-in-out infinite",
       },
     },
   },

@@ -11,10 +11,10 @@ export function Button({ label, href }: ButtonProps) {
   return (
     <Link
       to={href}
-      className="bg-blue-500 w-full lg:w-[15rem] h-[3rem] flex items-center justify-center gap-1 rounded-full font-semibold text-white hover:bg-blue-600 mt-10"
+      className="bg-blue-400 w-full lg:w-[15rem] h-[3rem] flex items-center justify-center gap-1 rounded-full font-semibold text-black hover:bg-[#6eadf1] mt-10"
     >
       {label}
-      <CaretRight size={16} color="#ffffff" weight="bold" />
+      <CaretRight size={16} color="#000000" weight="bold" />
     </Link>
   );
 }

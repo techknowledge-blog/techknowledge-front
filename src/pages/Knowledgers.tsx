@@ -5,7 +5,7 @@ import ImageAstrounautLight from "../assets/images/astronaut-lightmode.png";
 
 import { ThemeContext } from "../context/ThemeContext";
 
-export function Community() {
+export function Knowledgers() {
   const { darkMode } = useContext(ThemeContext);
 
   return (
