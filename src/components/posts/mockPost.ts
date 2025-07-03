@@ -8,6 +8,7 @@ import thumbMinhasInterfaces from "../../assets/images/thumbnails/criando-minhas
 import thumbMobile2025 from "../../assets/images/thumbnails/desenvolvimento-mobile-2025.jpg";
 import thumbMorarFora from "../../assets/images/thumbnails/morar-fora-do-brasil-vale-a-pena.jpg";
 import thumbFreelancerPassos from "../../assets/images/thumbnails/primeiros-passos-como-freelancer.jpg";
+import thumbComponentes from "../../assets/images/thumbnails/componentes.jpg";
 
 export const mockPost = [
   {
@@ -53,5 +54,9 @@ export const mockPost = [
   {
     id: 13,
     coverImage: thumbFreelancerPassos,
+  },
+  {
+    id: 14,
+    coverImage: thumbComponentes,
   },
 ];
