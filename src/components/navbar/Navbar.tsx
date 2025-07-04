@@ -24,7 +24,7 @@ export function Navbar() {
     <div className="pl-3 md:pl-0">
       <div
         onClick={() => setOpen(!open)}
-        className="absolute right-8 top-7 cursor-pointer md:hidden"
+        className="absolute right-4 top-7 cursor-pointer md:hidden"
       >
         {darkMode ? (
           <img src={open ? CloseDark : MenuHamburgerDark} alt="Menu" />
