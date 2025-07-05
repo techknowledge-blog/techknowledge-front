@@ -13,7 +13,7 @@ export function Header() {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
   return (
-    <header className="md:flex items-center justify-between pt-6">
+    <header className="w-full md:flex items-center justify-center pt-8 px-4 gap-12 lg:gap-[174px] lg:px-0">
       <Link to="/">
         {darkMode ? (
           <img

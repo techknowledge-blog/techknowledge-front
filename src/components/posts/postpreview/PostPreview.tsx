@@ -45,7 +45,7 @@ export function PostPreview() {
     .slice(0, 3);
 
   return (
-    <div className="flex flex-wrap items-start gap-12 mt-2 justify-center lg:justify-start">
+    <div className="flex flex-wrap items-start gap-8 lg:gap-12 justify-center lg:justify-start">
       {sortedPosts.map((post) => {
         const mock = mockPost.find((mock) => mock.id === post.id);
 
@@ -68,12 +68,12 @@ export function PostPreview() {
             <div className="text-center lg:text-left mt-4">
               <Link
                 to={`/posts/${post.slug}`}
-                className="font-semibold dark:text-[#EDE9FE] text-blue-500 text-base hover:underline w-[16rem] sm:w-[14rem] md:w-[16rem] lg:w-[18rem] block md:min-h-[2rem] md-custom:min-h-[3rem] lg-custom:min-h-[3rem] lg:min-h-[3rem]"
+                className="font-semibold dark:text-[#EDE9FE] text-blue-500 text-base hover:underline w-[20rem] sm:w-[14rem] md:w-[16rem] lg:w-[18rem] block md:min-h-[2rem] md-custom:min-h-[3rem] lg-custom:min-h-[3rem] lg:min-h-[3rem]"
               >
                 {post.title}
               </Link>
 
-              <p className="dark:text-[#C6D1F2] text-[#62748E] text-sm leading-relaxed w-[16rem] sm:w-[14rem] lg:w-[16rem] mx-auto mb-4 lg:mx-0 mt-4 sm:mb-6 md:min-h-[14vh] lg:min-h-[16vh] xl:min-h-[32vh] 2xl:min-h-[16vh]">
+              <p className="dark:text-[#C6D1F2] text-[#62748E] text-sm leading-relaxed w-[20rem] sm:w-[14rem] lg:w-[16rem] mx-auto mb-4 lg:mx-0 mt-4 sm:mb-6 md:min-h-[14vh] lg:min-h-[16vh] xl:min-h-[32vh] 2xl:min-h-[16vh]">
                 {post.previewContent}
               </p>
 

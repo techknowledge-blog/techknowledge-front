@@ -16,7 +16,7 @@ export function SectionFounders() {
           Fundadores
         </h2>
 
-        <div className="flex flex-col gap-6 w-[16rem] md:w-[26rem] lg:w-[26rem]">
+        <div className="flex flex-col gap-6 w-[19rem] screen-custom:w-[22rem] xs-custom:w-[22rem] md:w-[39rem] lg:w-[26rem]">
           <p className="font-medium leading-relaxed text-center lg:text-left dark:text-white text-[#62748E]">
             Fala galera! Somos o Mikael e a Leticia, os criadores do blog
             TechKnowledge. Gostariamos de compartilhar com vocês um pouco da
@@ -29,7 +29,7 @@ export function SectionFounders() {
           </p>
         </div>
 
-        <div className="w-full sm:w-1/3 md:w-60 mx-auto lg:mx-0">
+        <div className="w-[15rem] sm:w-1/3 md:w-60 mx-auto lg:mx-0">
           <Button label="Conhecer fundadores" href="/about" />
         </div>
       </div>

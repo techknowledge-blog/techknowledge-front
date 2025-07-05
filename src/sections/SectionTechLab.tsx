@@ -5,12 +5,8 @@ import TechLabImage from "../assets/images/techknowledge-techlab.png";
 
 export function SectionTechLab() {
   return (
-    <div
-      className="w-full bg-blue-400 flex flex-col items-center gap-6 mt-10 pt-8 px-4
-                    lg:flex-row lg:items-start lg:justify-center lg:w-[84.4rem] lg:h-[22.5rem] lg:pt-10
-                    xl:px-0 2xl:w-[159rem]"
-    >
-      <div className="max-w-[24rem] text-center lg:max-w-[28rem] lg:text-left">
+    <div className="bg-blue-400 w-full flex flex-col items-center gap-6 mt-10 pt-8 lg:flex-row lg:items-start lg:justify-center">
+      <div className="max-w-[20rem] text-center lg:max-w-[28rem] lg:text-left">
         <h2 className="text-3xl sm:text-4xl font-bold text-black">
           Vem conferir nosso <span>catálogo</span> de conteúdos no TechLab.
         </h2>
