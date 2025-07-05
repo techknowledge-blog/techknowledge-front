@@ -12,7 +12,7 @@ export function SectionLatestPosts() {
 
       <PostPreview />
 
-      <div className="w-[15rem] sm:w-1/3 mx-auto lg:mx-0">
+      <div className="w-[15rem] sm:w-1/3 md:w-60 mx-auto lg:mx-0">
         <Button label="Ver todos os artigos" href="/posts" />
       </div>
     </section>

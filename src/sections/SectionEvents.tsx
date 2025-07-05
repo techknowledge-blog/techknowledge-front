@@ -30,7 +30,7 @@ export function SectionEvents() {
           </div>
         </div>
 
-        <div className="w-[15rem] md:w-1/3 lg:ml-[-32px]">
+        <div className="w-[15rem] sm:w-1/3 md:w-60 lg:ml-[-32px]">
           <Button label="Saiba Mais" href="/contact" />
         </div>
       </div>
