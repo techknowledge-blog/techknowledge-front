@@ -28,6 +28,8 @@ export default {
         "md-custom": "853px",
         "xs-custom": "412px",
         "sm-extended": "540px",
+        "sm-medium": "390px",
+        "screen-custom": "375px",
         "sm-custom": "344px",
       },
       keyframes: {

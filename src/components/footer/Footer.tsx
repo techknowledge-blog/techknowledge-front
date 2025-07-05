@@ -20,13 +20,13 @@ export function Footer() {
           {darkMode ? (
             <img
               src={TechknowledgeMiniLogo}
-              className="lg:h-full h-6"
+              className="h-9 lg:h-full object-cover"
               alt="TechKnowledge Logo"
             />
           ) : (
             <img
               src={TechknowledgeMiniLogoLight}
-              className="lg:h-full h-6"
+              className="h-9 lg:h-full object-cover"
               alt="TechKnowledge Logo"
             />
           )}
