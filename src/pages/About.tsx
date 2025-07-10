@@ -1,204 +1,110 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import ImageTechknowlege from "../assets/images/about-techknowledge.png";
-import ImageLogoTechKnowledge from "../assets/images/new-logo-darkmode.svg";
-import ImageLogoTechknowledgeLight from "../assets/images/new-logo-lightmode.svg";
-import ImageMikaelAbout from "../assets/images/mikael-about.png";
-import ImageMikaelAboutLight from "../assets/images/mikael-about-light.png";
-import ImageLeticiaAbout from "../assets/images/leticia-about.png";
-import ImageLeticiaAboutLight from "../assets/images/leticia-about-light.png";
-
-import {
-  GithubLogo,
-  InstagramLogo,
-  LinkedinLogo,
-  XLogo,
-} from "@phosphor-icons/react";
-
-import { ThemeContext } from "../context/ThemeContext";
+import ImageAtletasConhecimento from "../assets/images/atletas-conhecimento-02.png";
+import founders from "../assets/images/founders-image.png";
+import techkknowledgeBoard from "../assets/images/techknowledge-board.png";
+import rocketLaunchBottom from "../assets/images/rocket-launch-bottom.png";
+import rocketLaunchRight from "../assets/images/rocket-launch-right.png";
 
 export function About() {
-  const { darkMode } = useContext(ThemeContext);
-
   return (
-    <div className="px-4 screen-custom:w-[20rem] md:w-[47rem] lg:w-[62rem]">
+    <div className="px-4 screen-custom:w-[22rem] sm-medium:w-[24rem] md:w-[46rem] lg:w-[62rem]">
       <div className="mt-16 flex flex-col items-center">
         <h1 className="text-2xl font-bold text-center sm:text-3xl dark:text-white text-black">
           Sobre
         </h1>
 
-        <div className="bg-[#93C5FD] w-full sm:h-[300px] md:h-[424px] mt-8 flex flex-col items-center rounded">
-          <p className="mt-8 w-64 text-lg font-bold text-center text-black sm:w-96 sm:text-xl">
-            Vem conhecer um pouco da história por trás do surgimento do blog
-            TechKnowledge.
-          </p>
-          <img
-            src={ImageTechknowlege}
-            alt=""
-            className="sm:h-[180px] md:h-[280px] lg:h-[320px] my-10 md:mt-16 lg:mt-8 object-cover px-4"
-          />
-        </div>
+        <p className="text-center py-4 lg:w-[28rem]">
+          Conheça um pouco da história por trás do surgimento do blog
+          TechKnowledge.
+        </p>
       </div>
 
-      <div className="mt-16 sm:mt-28 flex flex-col items-center lg:items-start">
-        {darkMode ? (
-          <img
-            src={ImageLogoTechKnowledge}
-            alt="Logo TechKnowledge"
-            className="sm:w-48 object-cover"
-          />
-        ) : (
-          <img
-            src={ImageLogoTechknowledgeLight}
-            alt="Logo TechKnowledge"
-            className="sm:w-48 object-cover"
-          />
-        )}
-
+      <div className="flex flex-col items-center gap-4 mt-10 lg:flex-row lg:items-start">
         <div>
-          <p className="text-sm mb-4 sm:text-base text-center lg:text-start dark:text-white text-[#62748E]">
+          <p className="mb-4">
             O TechKnowledge surgiu com o propósito de ser um espaço dedicado à
             troca de ideias, aprendizado e inspiração no universo da tecnologia.
           </p>
 
-          <p className="text-sm mb-4 sm:text-base text-center lg:text-start dark:text-white text-[#62748E]">
+          <p className="mb-4">
             Inicialmente, queríamos compartilhar nossas experiências como
-            competidores da{" "}
-            <span className="relative group cursor-pointer text-blue-500 underline">
-              Olimpíada do Conhecimento
-              <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-56 dark:bg-gray-800 bg-[#93C5FD] dark:text-white text-black text-xs rounded-lg shadow-lg px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 sm:w-72 sm:text-sm">
-                A Olimpíada do Conhecimento é a seletiva nacional para a maior
-                competição de educação profissional do mundo, a WorldSkills. É
-                uma oportunidade de demonstrar habilidades e buscar excelência
-                na profissão.
-              </span>
-            </span>
-            , e também dividir as lições aprendidas em nossa trajetória como
+            competidores da Olimpíada do Conhecimento, a seletiva nacional para
+            a maior competição de educação profissional do mundo, a WorldSkills,
+            e também dividir as lições aprendidas em nossa trajetória como
             desenvolvedores.
           </p>
 
-          <p className="text-sm mb-4 sm:text-base text-center lg:text-start dark:text-white text-[#62748E]">
-            Hoje, nosso blog vai além. Criamos conteúdos que não apenas
-            informam, mas também capacitam e desafiam desenvolvedores a alcançar
-            novos objetivos em suas jornadas profissionais. Somos movidos pela
-            paixão por tecnologia e acreditamos no aprendizado contínuo, sempre
-            explorando e descobrindo algo novo.
+          <p>
+            No entanto, com passar do tempo percebemos que queriamos ir além.
+          </p>
+        </div>
+
+        <img
+          src={ImageAtletasConhecimento}
+          className="h-52 object-fill transition-transform duration-300 hover:-rotate-[1.5deg] hover:scale-105 lg:h-80"
+          alt=""
+        />
+      </div>
+
+      <img
+        src={rocketLaunchBottom}
+        className="h-48 object-cover mt-[-28px] ml-[46px] md:ml-[250px] lg:h-[19.5rem] lg:mt-[-86px] lg:ml-[160px]"
+        alt=""
+      />
+
+      <div className="flex flex-col items-center gap-6 mt-4 lg:flex-row lg:items-start ">
+        <img
+          src={founders}
+          className="h-52 object-fill transition-transform duration-300 hover:rotate-[1deg] hover:scale-105 lg:h-80"
+          alt=""
+        />
+
+        <div>
+          <p className="mb-4">
+            O ano de 2024 marcou um momento especial para o Techknowledge. Foram
+            meses de dedicação intensa, pesquisa e muito trabalho para dar um
+            novo passo com o blog.
+          </p>
+
+          <p className="mb-4">
+            Não apenas com uma identidade visual nova, mas com um propósito
+            ainda mais claro: oferecer conteúdos relevantes e transformadores
+            para a comunidade de desenvolvedores.
+          </p>
+
+          <p>
+            Assumimos uma nova missão de ser uma fonte acessível, acolhedora e
+            prática para quem vive os desafios e conquistas do dia a dia na
+            tecnologia.
           </p>
         </div>
       </div>
 
-      <div className="mt-10">
-        <h2 className="text-xl font-bold mb-4 dark:bg-gradient-to-r dark:from-white dark:to-blue-300 dark:bg-clip-text dark:text-transparent text-blue-500 text-center sm:text-2xl lg:text-4xl lg:text-start">
-          Fundadores
-        </h2>
+      <img
+        src={rocketLaunchRight}
+        className="h-48 object-cover lg:h-[19.5rem] lg:ml-[8rem]"
+        alt=""
+      />
 
-        <div className="flex flex-col items-center gap-6 mt-8 lg:flex-row">
-          <div>
-            {darkMode ? (
-              <img
-                src={ImageMikaelAbout}
-                alt="Mikael Ribeiro"
-                className="h-[200px] sm:h-[260px] mx-auto lg:mx-0"
-              />
-            ) : (
-              <img
-                src={ImageMikaelAboutLight}
-                alt="Mikael Ribeiro"
-                className="h-[200px] sm:h-[260px] mx-auto lg:mx-0"
-              />
-            )}
-          </div>
+      <div className="flex flex-col items-center gap-6 lg:flex-row">
+        <div>
+          <p className="mb-4">
+            Nosso blog foi criado para oferecer conteúdos que não apenas
+            informam, mas que também capacitam e desafiam desenvolvedores a
+            alcançar novos patamares em suas jornadas profissionais.
+          </p>
 
-          <div className="lg:w-2/3 flex flex-col items-center justify-center lg:items-start">
-            <p className="font-bold text-xl sm:text-2xl text-center lg:text-start dark:text-white text-black">
-              Mikael Ribeiro
-            </p>
-            <p className="mt-4 text-sm sm:text-base text-center lg:text-start dark:text-white text-[#62748E]">
-              Eae! Meu nome é Mikael Ribeiro, também conhecido como "Mikkaiser".
-              Co-fundei o blog TechKnowledge com minha amiga Leticia Dias e
-              iniciei minha carreira como desenvolvedor de software em 2021.
-            </p>
-            <p className="mt-4 text-sm sm:text-base text-center lg:text-start dark:text-white text-[#62748E]">
-              Atualmente, sou professor de tecnologia da informação nos Emirados
-              Árabes. Minha missão é capacitar a próxima geração de
-              profissionais de software com as habilidades e o conhecimento
-              necessários para se destacarem no cenário global.
-            </p>
-            <div className="flex gap-4 mt-4">
-              <a href="https://www.instagram.com/mikkaiser_/" target="_blank">
-                <InstagramLogo size={24} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/mikael-ribeiro/"
-                target="_blank"
-              >
-                <LinkedinLogo size={24} />
-              </a>
-              <a href="https://github.com/Mikkaiser" target="_blank">
-                <GithubLogo size={24} />
-              </a>
-            </div>
-          </div>
+          <p className="mb-4">
+            E essa jornada está só começando. Vem com a gente fazer parte.
+          </p>
         </div>
 
-        <div className="flex flex-col items-center gap-6 mt-8 lg:flex-row">
-          <div>
-            {darkMode ? (
-              <img
-                src={ImageLeticiaAbout}
-                alt="Leticia Dias"
-                className="h-[200px] sm:h-[260px] mx-auto lg:mx-0"
-              />
-            ) : (
-              <img
-                src={ImageLeticiaAboutLight}
-                alt="Leticia Dias"
-                className="h-[200px] sm:h-[260px] mx-auto lg:mx-0"
-              />
-            )}
-          </div>
-
-          <div className="lg:w-2/3 flex flex-col items-center justify-center lg:items-start">
-            <p className="font-bold text-xl sm:text-2xl text-center dark:text-white text-black">
-              Leticia Dias
-            </p>
-            <p className="mt-4 text-sm sm:text-base text-center lg:text-start dark:text-white text-[#62748E]">
-              Olá, meu nome é Leticia Dias. Sou fundadora do blog TechKnowledge
-              junto com meu amigo Mikael Ribeiro. Iniciei minha carreira como
-              desenvolvedora full stack em 2022.
-            </p>
-            <p className="mt-4 text-sm sm:text-base text-center lg:text-start dark:text-white text-[#62748E]">
-              Atualmente, trabalho como desenvolvedora full stack. Recentemente,
-              atuei como desenvolvedora frontend react em um projeto e,
-              anteriormente, fui professora no curso técnico de informática para
-              internet, onde tinha como missão preparar os alunos para o mercado
-              de trabalho.
-            </p>
-            <div className="flex gap-4 mt-4">
-              <a
-                href="https://www.instagram.com/leticiadias.dev/"
-                target="_blank"
-              >
-                <InstagramLogo size={24} />
-              </a>
-
-              <a href="https://x.com/leticiadiasdev" target="_blank">
-                <XLogo size={24} />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/leticia-dia/"
-                target="_blank"
-              >
-                <LinkedinLogo size={24} />
-              </a>
-
-              <a href="https://github.com/leticiadia" target="_blank">
-                <GithubLogo size={24} />
-              </a>
-            </div>
-          </div>
-        </div>
+        <img
+          src={techkknowledgeBoard}
+          className="h-52 object-fill transition-transform duration-300 hover:rotate-[1deg] hover:scale-105 lg:h-80"
+          alt=""
+        />
       </div>
     </div>
   );
