@@ -42,7 +42,7 @@ export function Post() {
   }
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 mt-12">
+    <div className="px-4 sm:px-6 lg:px-8 mt-12 w-full md:w-[46rem] lg:w-[62rem]">
       <div className="flex items-center">
         <div className="h-6 w-1 dark:bg-blue-300 bg-blue-500 mr-4"></div>
         <p className="font-bold text-sm sm:text-base dark:text-white text-[#62748E]">
