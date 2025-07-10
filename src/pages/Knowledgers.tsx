@@ -9,8 +9,8 @@ export function Knowledgers() {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center h-screen">
-      <div className="flex items-center justify-center lg:justify-start w-full">
+    <div className="flex flex-col items-center justify-center h-screen lg:w-[60rem] px-4">
+      <div className="flex items-center justify-center lg:justify-start w-full mt-10 md:mt-0">
         <p className="bg-[#93C5FD] w-[16rem] h-[2.5rem] rounded-full mb-8 flex items-center justify-center text-black font-bold text-lg">
           #Em Breve 2025
         </p>

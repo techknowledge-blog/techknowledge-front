@@ -21,8 +21,8 @@ export function About() {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div className="w-full px-4">
-      <div className="mt-16 flex flex-col items-center w-full">
+    <div className="px-4 screen-custom:w-[20rem] md:w-[47rem] lg:w-[62rem]">
+      <div className="mt-16 flex flex-col items-center">
         <h1 className="text-2xl font-bold text-center sm:text-3xl dark:text-white text-black">
           Sobre
         </h1>
@@ -45,13 +45,13 @@ export function About() {
           <img
             src={ImageLogoTechKnowledge}
             alt="Logo TechKnowledge"
-            className="ml-[-8px] w-40 sm:w-48 object-cover"
+            className="sm:w-48 object-cover"
           />
         ) : (
           <img
             src={ImageLogoTechknowledgeLight}
             alt="Logo TechKnowledge"
-            className="ml-[-8px] w-40 sm:w-48 object-cover"
+            className="sm:w-48 object-cover"
           />
         )}
 
