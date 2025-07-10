@@ -42,7 +42,7 @@ export function About() {
 
         <img
           src={ImageAtletasConhecimento}
-          className="h-52 object-fill lg:h-80"
+          className="h-52 object-fill transition-transform duration-300 hover:-rotate-[1.5deg] hover:scale-105 lg:h-80"
           alt=""
         />
       </div>
@@ -53,8 +53,12 @@ export function About() {
         alt=""
       />
 
-      <div className="flex flex-col items-center gap-8 mt-4 lg:flex-row lg:items-start ">
-        <img src={founders} className="h-52 object-fill lg:h-80" alt="" />
+      <div className="flex flex-col items-center gap-6 mt-4 lg:flex-row lg:items-start ">
+        <img
+          src={founders}
+          className="h-52 object-fill transition-transform duration-300 hover:rotate-[1deg] hover:scale-105 lg:h-80"
+          alt=""
+        />
 
         <div>
           <p className="mb-4">
@@ -83,7 +87,7 @@ export function About() {
         alt=""
       />
 
-      <div className="flex flex-col items-center gap-4 lg:flex-row">
+      <div className="flex flex-col items-center gap-6 lg:flex-row">
         <div>
           <p className="mb-4">
             Nosso blog foi criado para oferecer conteúdos que não apenas
@@ -98,7 +102,7 @@ export function About() {
 
         <img
           src={techkknowledgeBoard}
-          className="h-52 object-fill lg:h-80"
+          className="h-52 object-fill transition-transform duration-300 hover:rotate-[1deg] hover:scale-105 lg:h-80"
           alt=""
         />
       </div>
