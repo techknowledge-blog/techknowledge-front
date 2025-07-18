@@ -9,6 +9,7 @@ import thumbMobile2025 from "../../assets/images/thumbnails/desenvolvimento-mobi
 import thumbMorarFora from "../../assets/images/thumbnails/morar-fora-do-brasil-vale-a-pena.jpg";
 import thumbFreelancerPassos from "../../assets/images/thumbnails/primeiros-passos-como-freelancer.jpg";
 import thumbComponentes from "../../assets/images/thumbnails/componentes.jpg";
+import thumbTailwindMobileFirst from "../../assets/images/thumbnails/tailwind-mobile-first.jpg";
 
 export const mockPost = [
   {
@@ -58,5 +59,9 @@ export const mockPost = [
   {
     id: 14,
     coverImage: thumbComponentes,
+  },
+  {
+    id: 15,
+    coverImage: thumbTailwindMobileFirst,
   },
 ];
