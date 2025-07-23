@@ -30,7 +30,7 @@ export function SectionFounders() {
         </div>
 
         <div className="w-[15rem] sm:w-1/3 md:w-60 mx-auto lg:mx-0">
-          <Button label="Conhecer fundadores" href="/about" />
+          <Button label="Conhecer fundadores" href="/founders" />
         </div>
       </div>
 
