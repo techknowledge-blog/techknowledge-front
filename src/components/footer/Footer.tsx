@@ -12,7 +12,7 @@ export function Footer() {
       <footer className="flex flex-col items-center justify-center gap-6 lg:gap-[200px] border-b-4 dark:border-b-[#00C2FF] border-b-blue-500 mt-16 py-4 px-2 sm:flex-row sm:py-6 lg:py-8">
         <div className="flex flex-col items-center sm:flex-row sm:gap-4">
           <p className="text-center sm:text-left font-medium">
-            ©2022 - 2025. Todos os direitos reservados ao TechKnowledge.
+            ©2022 - 2025. Todos os direitos reservados ao Techknowledge.
           </p>
         </div>
 

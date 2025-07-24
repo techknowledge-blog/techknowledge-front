@@ -1,105 +1,120 @@
 import React from "react";
 import { Envelope } from "@phosphor-icons/react";
 
-import Image from "../assets/images/atletas-conhecimento.png";
-import ImageEvent from "../assets/images/palestra.png";
+import LeticiaSpeaking from "../assets/images/leticia-speaking.png";
+import MikaelSpeaking from "../assets/images/mikael-speaking.png";
+import Participants from "../assets/images/participants.png";
+import MeetupSergipe from "../assets/images/meetup-sergipe.png";
 
-const ContactInfo = ({ name, email }: { name: string; email: string }) => (
-  <div>
-    <p className="font-bold mb-4">{name}</p>
-    <div className="flex items-center gap-2">
-      <Envelope size={24} className="text-blue-500" />
-      <p>{email}</p>
-    </div>
-  </div>
-);
+const contactInfo = [
+  {
+    name: "Mikael Ribeiro",
+    email: "mikaelrsimoes19@gmail.com",
+  },
+  {
+    name: "Leticia Dias",
+    email: "contatoleticiadia@gmail.com",
+  },
+  {
+    name: "Techknowledge",
+    email: "contatotechknowledge@gmail.com",
+  },
+];
 
-const Section = ({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) => (
-  <section className="my-10">
-    <h3 className="text-2xl font-bold mb-8">{title}</h3>
-    {children}
-  </section>
-);
+const eventImages = [
+  LeticiaSpeaking,
+  MikaelSpeaking,
+  Participants,
+  MeetupSergipe,
+];
 
 export function Contact() {
   return (
-    <div className="w-full px-4 mx-auto">
-      <h1 className="text-2xl font-bold text-center sm:text-3xl mt-16">
-        Contato
-      </h1>
+    <div className="px-4 screen-custom:w-[22rem] sm-medium:w-[24rem] md:w-[46rem] lg:w-[62rem]">
+      <div className="mt-16 flex flex-col items-center">
+        <h1 className="text-2xl font-bold text-center sm:text-3xl dark:text-white text-black">
+          Contato
+        </h1>
 
-      <Section title="">
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
-          <div className="flex flex-col justify-between min-h-full">
-            <h3 className="text-2xl font-bold mb-6 self-stretch dark:text-white text-black">
-              Nos convide para o seu evento!
-            </h3>
-            <div>
-              <p className="mb-6 max-w-lg dark:text-white text-black">
-                Somos apaixonados por tecnologia, comunidade e educação. Com
-                experiência em desenvolvimento web, ensino e eventos, já
-                compartilhamos nossos conhecimentos em meetups e podcasts.
-              </p>
-              <p className="mb-6 max-w-lg dark:text-white text-black">
-                Se você busca palestrantes engajados para falar sobre inovação,
-                carreira na tecnologia, desenvolvimento web e muito mais,
-                estamos prontos para contribuir com o seu evento!
-              </p>
-              <p className="font-bold dark:text-white text-black">
-                📩 Entre em contato e vamos conversar!
-              </p>
+        <p className="text-center py-4 lg:w-[28rem]">
+          Quer bater um papo com a gente, convidar para um evento ou podcast?
+          Estamos por aqui!
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-4 mt-8 md:mt-16">
+        <h2 className="text-2xl font-bold">Nos convide para o seu evento!</h2>
+
+        <p>
+          Somos apaixonados por{" "}
+          <span className="text-blue-400 font-semibold">tecnologia</span>,{" "}
+          <span className="text-blue-400 font-semibold">comunidade</span> e{" "}
+          <span className="text-blue-400 font-semibold">educação</span>. Com
+          experiência em desenvolvimento web, ensino e eventos, já
+          compartilhamos nossos conhecimentos em meetups e podcasts.
+        </p>
+
+        <p>
+          Se você busca palestrantes engajados para falar sobre{" "}
+          <span className="text-blue-400 font-semibold">inovação</span>,{" "}
+          <span className="text-blue-400 font-semibold">
+            carreira na tecnologia
+          </span>
+          ,{" "}
+          <span className="text-blue-400 font-semibold">
+            desenvolvimento web
+          </span>{" "}
+          e muito mais, estamos prontos para contribuir com o seu evento!
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-4 mt-8">
+        <h2 className="text-2xl font-bold">Eventos</h2>
+
+        <p>
+          Tivemos a incrível oportunidade de palestrar em meetups como o{" "}
+          <span className="text-blue-400 font-semibold">
+            Meetup Space Squad em Maceió - Alagoas
+          </span>{" "}
+          e{" "}
+          <span className="text-blue-400 font-semibold">Aracaju - Sergipe</span>
+          , onde compartilhamos nossos conhecimentos e experiências com a
+          comunidade tech.
+        </p>
+
+        <p>
+          Para nós, foi uma experiência enriquecedora e gratificante,
+          fortalecendo nosso compromisso em levar conteúdo de qualidade e
+          contribuir para o crescimento da{" "}
+          <span className="text-blue-400 font-semibold">comunidade tech</span>.
+        </p>
+      </div>
+
+      <div className="flex items-center justify-between flex-wrap gap-5 mt-8 md:flex-row">
+        {eventImages.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt=""
+            className="h-[9rem] md:h-[10rem] lg:h-[14rem] hover:transition-transform hover:duration-300 hover:ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-blue-400/10 hover:rounded-full"
+          />
+        ))}
+      </div>
+
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold">Entre em Contato</h2>
+        <div className="flex flex-col items-start gap-8 mt-4 md:flex-wrap md:flex-row md:items-center">
+          {contactInfo.map(({ name, email }) => (
+            <div key={name} className="flex flex-col gap-4">
+              <p className="font-bold">{name}</p>
+              <div className="flex items-center gap-2">
+                <Envelope size={24} color="#8ec5ff" />
+                <p>{email}</p>
+              </div>
             </div>
-          </div>
-
-          <img
-            src={Image}
-            alt="Palestrantes em evento de tecnologia"
-            className="w-96 h-auto"
-          />
+          ))}
         </div>
-      </Section>
-
-      <Section title="Eventos">
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
-          <div>
-            <p className="mb-6 max-w-lg dark:text-white text-black">
-              Tivemos a incrível oportunidade de palestrar em meetups como o{" "}
-              <strong>Meetup Space Squad em Maceió - Alagoas</strong> e{" "}
-              <strong>Aracaju - Sergipe</strong>, onde compartilhamos nossos
-              conhecimentos e experiências com a comunidade tech.
-            </p>
-            <p className="mb-6 max-w-lg dark:text-white text-black">
-              Para nós, foi uma experiência enriquecedora e gratificante,
-              fortalecendo nosso compromisso em levar conteúdo de qualidade e
-              contribuir para o crescimento do ecossistema tecnológico.
-            </p>
-          </div>
-          <img
-            src={ImageEvent}
-            alt="Evento de tecnologia"
-            className="w-96 h-auto"
-          />
-        </div>
-      </Section>
-
-      <Section title="Entre em Contato">
-        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
-          <ContactInfo
-            name="Mikael Ribeiro"
-            email="mikaelrsimoes19@gmail.com"
-          />
-          <ContactInfo
-            name="Leticia Dias"
-            email="contatoleticiadia@gmail.com"
-          />
-        </div>
-      </Section>
+      </div>
     </div>
   );
 }

@@ -24,12 +24,12 @@ export function SectionMain() {
               <CaretRight size={16} color="#000000" weight="bold" />
             </a>
           </Link>
-          <Link to="/community">
+          <Link to="/knowledgers">
             <a
               href="#"
               className="text-blue-400 py-3 px-6 flex items-center justify-center gap-1 font-semibold hover:underline"
             >
-              Comunidade
+              Knowledgers
               <CaretRight size={16} color="#8ec5ff" weight="bold" />
             </a>
           </Link>
