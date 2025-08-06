@@ -19,6 +19,7 @@ export function AppRouter() {
       <Route path="/posts/:slug" element={<Post />}></Route>
       <Route path="/techlab" element={<TechLab />}></Route>
       <Route path="/knowledgers" element={<Knowledgers />}></Route>
+      <Route path="/users" element={<Knowledgers />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
     </Routes>
   );
