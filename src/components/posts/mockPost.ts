@@ -10,6 +10,7 @@ import thumbMorarFora from "../../assets/images/thumbnails/morar-fora-do-brasil-
 import thumbFreelancerPassos from "../../assets/images/thumbnails/primeiros-passos-como-freelancer.jpg";
 import thumbComponentes from "../../assets/images/thumbnails/componentes.jpg";
 import thumbTailwindMobileFirst from "../../assets/images/thumbnails/tailwind-mobile-first.jpg";
+import thumbTailwindFerramentaPoderosa from "../../assets/images/thumbnails/tailwind-ferramenta-poderosa.jpg";
 
 export const mockPost = [
   {
@@ -63,5 +64,9 @@ export const mockPost = [
   {
     id: 15,
     coverImage: thumbTailwindMobileFirst,
+  },
+  {
+    id: 16,
+    coverImage: thumbTailwindFerramentaPoderosa,
   },
 ];
