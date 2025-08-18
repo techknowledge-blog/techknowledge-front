@@ -36,21 +36,21 @@ export const mockKnowledgers = [
   },
 
   {
-    id: 8,
+    id: 7,
     name: "Alves Jhonata",
     image: knowledgerAlves,
     flag: "para",
   },
 
   {
-    id: 9,
+    id: 8,
     name: "João Jacinto",
     image: knowledgerJoao,
     flag: "alagoas",
   },
 
   {
-    id: 11,
+    id: 9,
     name: "Daniel Duarte",
     image: knowledgerDaniel,
     flag: "alagoas",
