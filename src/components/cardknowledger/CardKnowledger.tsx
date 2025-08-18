@@ -21,11 +21,7 @@ export function CardKnowledger() {
     async function loadUsers() {
       const response = await getUsers();
 
-      const filteredUsers = response.filter(
-        (user: UserProps) => user.role === "creator"
-      );
-
-      setUsers(filteredUsers);
+      setUsers(response);
     }
 
     loadUsers();
