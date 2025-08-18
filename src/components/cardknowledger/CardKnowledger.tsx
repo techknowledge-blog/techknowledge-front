@@ -43,11 +43,7 @@ export function CardKnowledger() {
           (knowledge) => knowledge.id === user.id
         )?.flag;
 
-        console.log("flagKey: ", flagKey);
-
         const flagImage = flagKey ? flags[flagKey] : undefined;
-
-        console.log("flagImage: ", flagImage);
 
         return (
           <div key={user.id} className="flex flex-col gap-4">
