@@ -6,10 +6,12 @@ import { mockKnowledgers } from "./mockKnowledgers";
 import flagBrasil from "../../assets/images/bandeira-de-brasil.png";
 import flagAlagoas from "../../assets/images/bandeira-de-alagoas.png";
 import flagPara from "../../assets/images/bandeira-do-para.png";
+import { Link } from "react-router";
 
 interface UserProps {
   id: number;
   name: string;
+  username: string;
   function: string;
   role: string;
 }
@@ -60,13 +62,11 @@ export function CardKnowledger() {
                 </div>
               </div>
             </div>
-
-            <button
-              disabled
-              className="bg-blue-400 w-full h-12 text-black rounded-full flex items-center justify-center font-bold opacity-50 cursor-not-allowed"
-            >
-              Ver perfil
-            </button>
+            <Link to={`/users/${user.username}`}>
+              <button className="bg-blue-400 w-full h-12 text-black rounded-full flex items-center justify-center font-bold">
+                Ver perfil
+              </button>
+            </Link>
           </div>
         );
       })}

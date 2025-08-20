@@ -8,6 +8,7 @@ import { TechLab } from "./pages/TechLab";
 import { Contact } from "./pages/Contact";
 import { Route, Routes } from "react-router-dom";
 import { Founders } from "./pages/Founders";
+import { Profile } from "./pages/Profile";
 
 export function AppRouter() {
   return (
@@ -20,6 +21,7 @@ export function AppRouter() {
       <Route path="/techlab" element={<TechLab />}></Route>
       <Route path="/knowledgers" element={<Knowledgers />}></Route>
       <Route path="/users" element={<Knowledgers />}></Route>
+      <Route path="/users/:username" element={<Profile />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
     </Routes>
   );
