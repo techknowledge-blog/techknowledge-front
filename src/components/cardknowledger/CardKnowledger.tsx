@@ -14,6 +14,7 @@ interface UserProps {
   username: string;
   function: string;
   role: string;
+  description: string;
 }
 
 export function CardKnowledger() {
@@ -63,7 +64,14 @@ export function CardKnowledger() {
               </div>
             </div>
             <Link to={`/users/${user.username}`}>
-              <button className="bg-blue-400 w-full h-12 text-black rounded-full flex items-center justify-center font-bold">
+              <button
+                disabled={!user.description}
+                className={`w-full h-12 rounded-full flex items-center justify-center font-bold ${
+                  !user.description
+                    ? "bg-blue-400 text-black cursor-not-allowed opacity-35"
+                    : "bg-blue-400 text-black hover:bg-[#6eadf1]"
+                }`}
+              >
                 Ver perfil
               </button>
             </Link>
