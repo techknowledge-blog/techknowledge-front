@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { ArrowRight } from "@phosphor-icons/react";
+import { ArrowRight, Clock } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import { formatDateToLong } from "../../../utils/formatDate";
 import { getPosts } from "../../../services/postsService";
@@ -14,6 +14,7 @@ export interface PostType {
     name: string;
   };
   slug: string;
+  estimated_time: number;
 }
 
 export function PostList() {
@@ -68,7 +69,7 @@ export function PostList() {
               >
                 <div className="flex flex-col gap-4 flex-grow">
                   <Link to={`/posts/${post.slug}`} className="no-underline">
-                    <h3 className="lg:w-[28rem] md:w-[16rem] text-sm md:text-xl font-bold dark:text-[#EDE9FE] text-black hover:underline hover:decoration-2 dark:hover:decoration-blue-300 hover:decoration-black">
+                    <h3 className="lg:w-[28rem] md:w-[16rem] text-sm md:text-xl font-bold dark:text-[#EDE9FE] text-black hover:underline hover:decoration-2 dark:hover:decoration-blue-400 hover:decoration-black">
                       {post.title}
                     </h3>
                   </Link>
@@ -85,13 +86,22 @@ export function PostList() {
                   </p>
                 </div>
 
-                <Link
-                  to={`/posts/${post.slug}`}
-                  className="flex items-center gap-2 font-bold mt-auto min-h-14 text-sm dark:text-white text-black dark:hover:text-blue-300 hover:underline"
-                >
-                  Ler mais
-                  <ArrowRight size={16} />
-                </Link>
+                <div className="flex items-center justify-between">
+                  <Link
+                    to={`/posts/${post.slug}`}
+                    className="flex items-center gap-2 font-bold mt-auto min-h-14 text-sm dark:text-white text-black dark:hover:text-blue-400 hover:underline"
+                  >
+                    Ler mais
+                    <ArrowRight size={16} />
+                  </Link>
+
+                  <div className="flex items-center gap-2">
+                    <Clock size={20} weight="bold" color="#8ec5ff" />
+                    <p className="text-sm font-semibold text-blue-400">
+                      {post.estimated_time}min
+                    </p>
+                  </div>
+                </div>
               </li>
             ))}
           </ul>
