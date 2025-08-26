@@ -21,6 +21,7 @@ interface PostProps {
 
 export function Post() {
   const [post, setPost] = useState<PostProps>();
+
   const authorInfo = mockAuthor.find(
     (author) => author.name === post?.author.name
   );

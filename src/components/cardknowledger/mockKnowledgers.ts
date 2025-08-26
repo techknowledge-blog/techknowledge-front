@@ -15,9 +15,9 @@ export const mockKnowledgers = [
     image: knowledgerMonique,
     flag: "alagoas",
     social: [
-      { icon: GithubLogo, url: "https://github.com/leticiadia" },
-      { icon: InstagramLogo, url: "https://www.instagram.com/leohdas/" },
-      { icon: LinkedinLogo, url: "https://www.linkedin.com/in/leohas/" },
+      { icon: GithubLogo, url: "" },
+      { icon: InstagramLogo, url: "" },
+      { icon: LinkedinLogo, url: "" },
     ],
   },
 
@@ -40,9 +40,9 @@ export const mockKnowledgers = [
     image: knowledgerAlves,
     flag: "para",
     social: [
-      { icon: GithubLogo, url: "https://github.com/leticiadia" },
-      { icon: InstagramLogo, url: "https://www.instagram.com/leohdas/" },
-      { icon: LinkedinLogo, url: "https://www.linkedin.com/in/leohas/" },
+      { icon: GithubLogo, url: "" },
+      { icon: InstagramLogo, url: "" },
+      { icon: LinkedinLogo, url: "" },
     ],
   },
 
@@ -52,9 +52,9 @@ export const mockKnowledgers = [
     image: knowledgerJoao,
     flag: "alagoas",
     social: [
-      { icon: GithubLogo, url: "https://github.com/leticiadia" },
-      { icon: InstagramLogo, url: "https://www.instagram.com/leohdas/" },
-      { icon: LinkedinLogo, url: "https://www.linkedin.com/in/leohas/" },
+      { icon: GithubLogo, url: "" },
+      { icon: InstagramLogo, url: "" },
+      { icon: LinkedinLogo, url: "" },
     ],
   },
 
@@ -64,8 +64,8 @@ export const mockKnowledgers = [
     image: knowledgerDaniel,
     flag: "alagoas",
     social: [
-      { icon: InstagramLogo, url: "https://www.instagram.com/leohdas/" },
-      { icon: LinkedinLogo, url: "https://www.linkedin.com/in/leohas/" },
+      { icon: InstagramLogo, url: "" },
+      { icon: LinkedinLogo, url: "" },
     ],
   },
 ];
