@@ -11,6 +11,7 @@ import thumbFreelancerPassos from "../../assets/images/thumbnails/primeiros-pass
 import thumbComponentes from "../../assets/images/thumbnails/componentes.jpg";
 import thumbTailwindMobileFirst from "../../assets/images/thumbnails/tailwind-mobile-first.jpg";
 import thumbTailwindFerramentaPoderosa from "../../assets/images/thumbnails/tailwind-ferramenta-poderosa.jpg";
+import thumbComponentesGenericosParte01 from "../../assets/images/thumbnails/componentes-genericos-parte-01.jpg";
 
 export const mockPost = [
   {
@@ -68,5 +69,9 @@ export const mockPost = [
   {
     id: 16,
     coverImage: thumbTailwindFerramentaPoderosa,
+  },
+  {
+    id: 17,
+    coverImage: thumbComponentesGenericosParte01,
   },
 ];
