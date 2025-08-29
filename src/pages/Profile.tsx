@@ -71,7 +71,11 @@ export function Profile() {
         </div>
 
         <div>
-          <img src={knowledgerInfo?.imageProfile} alt="" />
+          <img
+            src={knowledgerInfo?.imageProfile}
+            className="transition-transform duration-300 hover:rotate-[1.5deg] hover:scale-105"
+            alt=""
+          />
 
           <div className="flex items-center justify-center gap-4 mt-4">
             {knowledgerInfo?.social?.map(
