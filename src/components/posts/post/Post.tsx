@@ -17,6 +17,7 @@ interface PostProps {
   content: string;
   slug: string;
   createdAt: string;
+  article_level: string;
 }
 
 export function Post() {
@@ -42,13 +43,29 @@ export function Post() {
     return <div>carregando...</div>;
   }
 
+  const levelColors: Record<string, string> = {
+    Iniciante: "bg-[#B4CB3F]",
+    Intermediário: "bg-[#408EEB]",
+    Avançado: "bg-[#7B66D4]",
+  };
+
   return (
-    <div className="px-4 sm:px-6 lg:px-8 mt-12 w-full md:w-[46rem] lg:w-[62rem]">
-      <div className="flex items-center">
-        <div className="h-6 w-1 dark:bg-blue-300 bg-blue-500 mr-4"></div>
-        <p className="font-bold text-sm sm:text-base dark:text-white text-[#62748E]">
-          {formatDateToCustomFormat(post.createdAt)}
-        </p>
+    <div className="px-6 mt-12 w-full md:w-[46rem] lg:w-[62rem]">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center">
+          <div className="h-6 w-1 dark:bg-blue-300 bg-blue-500 mr-4"></div>
+          <p className="font-bold text-sm sm:text-base dark:text-white text-[#62748E]">
+            {formatDateToCustomFormat(post.createdAt)}
+          </p>
+        </div>
+
+        <span
+          className={`w-[6.5rem] h-[1.625rem] rounded-full text-xs text-black font-semibold flex items-center justify-center ${
+            levelColors[post.article_level] || "bg-gray-200 text-gray-700"
+          }`}
+        >
+          <p>{post.article_level}</p>
+        </span>
       </div>
 
       <div className="prose prose-invert max-w-none mt-8">
@@ -59,7 +76,7 @@ export function Post() {
         <div className="mt-8">
           <ReactMarkdown
             className=" prose dark:prose-invert prose-h1:text-black dark:prose-h1:text-white max-w-full 
-            prose-pre:overflow-x-auto prose-pre:max-w-full md:prose-pre:w-full sm-custom:prose-pre:w-[18rem] sm-extended:prose-pre:w-[30rem] xs-custom:prose-pre:w-[21rem] prose-pre:p-4 
+            prose-pre:overflow-x-auto prose-pre:max-w-full md:prose-pre:w-full sm-custom:prose-pre:w-full sm-extended:prose-pre:w-full xs-custom:prose-pre:w-full prose-pre:p-4 
           prose-pre:bg-gray-800 dark:prose-pre:bg-slate-800 prose-pre:text-white prose-pre:rounded-lg
             prose-code:break-words prose-code:whitespace-pre-wrap"
             rehypePlugins={[rehypeHighlight]}
