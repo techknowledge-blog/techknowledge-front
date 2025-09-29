@@ -15,6 +15,7 @@ export interface PostType {
   };
   slug: string;
   estimated_time: number;
+  article_level: string;
 }
 
 export function PostList() {
@@ -47,6 +48,12 @@ export function PostList() {
     }, {});
   }
 
+  const levelColors: Record<string, string> = {
+    Iniciante: "bg-[#B4CB3F]",
+    Intermediário: "bg-[#408EEB]",
+    Avançado: "bg-[#7B66D4]",
+  };
+
   const postsByCategory = groupPostsByCategory(posts);
 
   return (
@@ -65,7 +72,7 @@ export function PostList() {
             {posts.map((post) => (
               <li
                 key={post.id}
-                className="dark:bg-[#1E293B] bg-[#93C5FD] p-6 rounded-lg dark:hover:bg-[#334155] hover:bg-[#71b4ff] transition w-[20rem] md:w-full h-full flex flex-col"
+                className="dark:bg-[#1E293B] bg-[#93C5FD] p-4 rounded-lg dark:hover:bg-[#334155] hover:bg-[#71b4ff] transition w-[20rem] md:w-full h-full flex flex-col"
               >
                 <div className="flex flex-col gap-4 flex-grow">
                   <Link to={`/posts/${post.slug}`} className="no-underline">
@@ -86,7 +93,7 @@ export function PostList() {
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-4">
                   <Link
                     to={`/posts/${post.slug}`}
                     className="flex items-center gap-2 font-bold mt-auto min-h-14 text-sm dark:text-white text-black dark:hover:text-blue-400 hover:underline"
@@ -95,11 +102,22 @@ export function PostList() {
                     <ArrowRight size={16} />
                   </Link>
 
-                  <div className="flex items-center gap-2">
-                    <Clock size={20} weight="bold" color="#8ec5ff" />
-                    <p className="text-sm font-semibold text-blue-400">
-                      {post.estimated_time}min
-                    </p>
+                  <div className="flex items-center gap-2 lg:gap-4">
+                    <span
+                      className={`w-[6rem] h-[1.5rem] lg:w-[6.5rem] lg:h-[1.625rem] rounded-full text-xs text-black font-semibold flex items-center justify-center ${
+                        levelColors[post.article_level] ||
+                        "bg-gray-200 text-gray-700"
+                      }`}
+                    >
+                      <p>{post.article_level}</p>
+                    </span>
+
+                    <div className="flex items-center gap-2">
+                      <Clock size={20} weight="bold" color="#8ec5ff" />
+                      <p className="text-sm font-semibold text-blue-400">
+                        {post.estimated_time}min
+                      </p>
+                    </div>
                   </div>
                 </div>
               </li>
