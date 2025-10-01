@@ -20,9 +20,12 @@ export const mockKnowledgers = [
     imageProfile: MoniqueProfileImage,
     flag: "alagoas",
     social: [
-      { icon: GithubLogo, url: "" },
-      { icon: InstagramLogo, url: "" },
-      { icon: LinkedinLogo, url: "" },
+      { icon: GithubLogo, url: "https://github.com/CyberNicky" },
+      { icon: InstagramLogo, url: "https://www.instagram.com/nicky__dev/" },
+      {
+        icon: LinkedinLogo,
+        url: "https://www.linkedin.com/in/monique-campos-albuquerque/",
+      },
     ],
   },
 
@@ -59,9 +62,12 @@ export const mockKnowledgers = [
     imageProfile: JoaoProfileImage,
     flag: "alagoas",
     social: [
-      { icon: GithubLogo, url: "" },
-      { icon: InstagramLogo, url: "" },
-      { icon: LinkedinLogo, url: "" },
+      { icon: GithubLogo, url: "https://github.com/mrgreentm" },
+      { icon: InstagramLogo, url: "https://www.instagram.com/joaojacintoo/" },
+      {
+        icon: LinkedinLogo,
+        url: "https://www.linkedin.com/in/joaojacintoneto/",
+      },
     ],
   },
 
@@ -72,8 +78,8 @@ export const mockKnowledgers = [
     imageProfile: DanielProfileImage,
     flag: "alagoas",
     social: [
-      { icon: InstagramLogo, url: "" },
-      { icon: LinkedinLogo, url: "" },
+      { icon: InstagramLogo, url: "https://www.instagram.com/odaniel2d/" },
+      { icon: LinkedinLogo, url: "https://www.linkedin.com/in/daniel2d/" },
     ],
   },
 ];
