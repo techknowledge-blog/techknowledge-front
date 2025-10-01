@@ -56,16 +56,19 @@ export function Profile() {
             <h3 className="text-xl font-bold mb-4">Artigos Publicados</h3>
 
             <div className="flex flex-col gap-2">
-              {user?.posts.map((post) => (
-                <Link to={`/posts/${post.slug}`}>
-                  <a
-                    href=""
-                    className="text-blue-400 font-semibold hover:underline"
-                  >
-                    {post.title}
-                  </a>
-                </Link>
-              ))}
+              {user?.posts && user.posts.length > 0 ? (
+                user?.posts.map((post) => (
+                  <Link key={post.slug} to={`/posts/${post.slug}`}>
+                    <span className="text-blue-400 font-semibold hover:underline">
+                      {post.title}
+                    </span>
+                  </Link>
+                ))
+              ) : (
+                <p className="text-blue-400 font-semibold">
+                  Não há artigos publicados no momento.
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -86,7 +89,7 @@ export function Profile() {
                   target="_blank"
                   className="hover:text-blue-400"
                 >
-                  <Icon key={index} size={32} />
+                  <Icon size={32} />
                 </a>
               )
             )}
