@@ -14,6 +14,7 @@ import thumbTailwindFerramentaPoderosa from "../../assets/images/thumbnails/tail
 import thumbComponentesGenericosParte01 from "../../assets/images/thumbnails/componentes-genericos-parte-01.jpg";
 import thumbComponentesGenericosParte02 from "../../assets/images/thumbnails/componentes-genericos-parte-02.jpg";
 import thumbEntendendoAlgoritmos from "../../assets/images/thumbnails/entendendo-algoritmos.jpg";
+import thumbTailwindCSSV4 from "../../assets/images/thumbnails/tailwind-css-v4.jpg";
 
 export const mockPost = [
   {
@@ -84,5 +85,10 @@ export const mockPost = [
   {
     id: 19,
     coverImage: thumbEntendendoAlgoritmos,
+  },
+
+  {
+    id: 20,
+    coverImage: thumbTailwindCSSV4,
   },
 ];
