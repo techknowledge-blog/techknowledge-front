@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "../components/button/Button";
+import { Button } from "../components/ui/button/Button";
 
 import rocketImage from "../assets/images/rocket.svg";
 

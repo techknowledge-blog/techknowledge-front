@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getUserByUsername } from "../services/usersService";
-import { mockKnowledgers } from "../components/cardknowledger/mockKnowledgers";
+import { mockKnowledgers } from "../components/ui/cardknowledger/mockKnowledgers";
 import { Link } from "react-router";
 
 interface UserProps {

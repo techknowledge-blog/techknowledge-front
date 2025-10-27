@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CardKnowledger } from "../components/cardknowledger/CardKnowledger";
+import { CardKnowledger } from "../components/ui/cardknowledger/CardKnowledger";
 
 export function Knowledgers() {
   return (
