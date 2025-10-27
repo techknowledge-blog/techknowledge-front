@@ -1,3 +1,5 @@
+import { transform } from "typescript";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
@@ -42,10 +44,16 @@ export default {
           "0%, 100%": { transform: "translateX(-50%) scaleX(1)" },
           "50%": { transform: "translateX(-50%) scaleX(0.6)", opacity: "0.15" },
         },
+
+        scaleUp: {
+          from: { transform: "scale(0.95)", opacity: 0 },
+          to: { transform: "scale(1)", opacity: 1 },
+        },
       },
       animation: {
         bounceSoft: "bounceSoft 3s ease-in-out infinite",
         shadowShrink: "shadowShrink 3s ease-in-out infinite",
+        scaleUp: "scaleUp 0.25s ease",
       },
     },
   },
