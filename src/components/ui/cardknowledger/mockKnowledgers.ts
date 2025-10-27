@@ -1,14 +1,14 @@
-import knowledgerMonique from "../../assets/images/knowledgers/monique.png";
-import knowledgerLeonardo from "../../assets/images/knowledgers/leonardo.png";
-import knowledgerAlves from "../../assets/images/knowledgers/alves.png";
-import knowledgerJoao from "../../assets/images/knowledgers/joao.png";
-import knowledgerDaniel from "../../assets/images/knowledgers/daniel.png";
+import knowledgerMonique from "../../../assets/images/knowledgers/monique.png";
+import knowledgerLeonardo from "../../../assets/images/knowledgers/leonardo.png";
+import knowledgerAlves from "../../../assets/images/knowledgers/alves.png";
+import knowledgerJoao from "../../../assets/images/knowledgers/joao.png";
+import knowledgerDaniel from "../../../assets/images/knowledgers/daniel.png";
 
-import LeonardoProfileImage from "../../assets/images/leonardo-profile-image.png";
-import AlvesProfileImage from "../../assets/images/image-alves-profile.png";
-import MoniqueProfileImage from "../../assets/images/image-monique-profile.png";
-import JoaoProfileImage from "../../assets/images/image-monique-profile.png";
-import DanielProfileImage from "../../assets/images/image-daniel-profile.png";
+import LeonardoProfileImage from "../../../assets/images/leonardo-profile-image.png";
+import AlvesProfileImage from "../../../assets/images/image-alves-profile.png";
+import MoniqueProfileImage from "../../../assets/images/image-monique-profile.png";
+import JoaoProfileImage from "../../../assets/images/image-monique-profile.png";
+import DanielProfileImage from "../../../assets/images/image-daniel-profile.png";
 
 import { GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
 

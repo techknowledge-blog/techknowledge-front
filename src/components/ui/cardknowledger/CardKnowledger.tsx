@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import { getUsers } from "../../services/usersService";
+import { getUsers } from "../../../services/usersService";
 import { mockKnowledgers } from "./mockKnowledgers";
 
-import flagBrasil from "../../assets/images/bandeira-de-brasil.png";
-import flagAlagoas from "../../assets/images/bandeira-de-alagoas.png";
-import flagPara from "../../assets/images/bandeira-do-para.png";
+import flagBrasil from "../../../assets/images/bandeira-de-brasil.png";
+import flagAlagoas from "../../../assets/images/bandeira-de-alagoas.png";
+import flagPara from "../../../assets/images/bandeira-do-para.png";
 import { Link } from "react-router";
 
 interface UserProps {

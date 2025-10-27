@@ -1,5 +1,5 @@
 import React from "react";
-import { CardOurPurpose } from "../components/cardourpurpose/CardOurPurpose";
+import { CardOurPurpose } from "../components/ui/cardourpurpose/CardOurPurpose";
 
 export function SectionOurPurpose() {
   return (

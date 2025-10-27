@@ -1,11 +1,11 @@
-import authorLeticia from "../../assets/images/authors/leticia.jpeg";
-import authorMikael from "../../assets/images/authors/mikael.jpeg";
-import authorJoaoJacinto from "../../assets/images/authors/joao-jacinto.jpeg";
-import auhtorMoniqueCampos from "../../assets/images/authors/monique-campos.jpeg";
-import authorLeonardo from "../../assets/images/authors/leonardo.jpeg";
-import authorPedroMiguel from "../../assets/images/authors/pedro-miguel.png";
-import authorLucasAlves from "../../assets/images/authors/lucasalves.jpeg";
-import authorAlvesJhonata from "../../assets/images/authors/alves-jhonata.png";
+import authorLeticia from "../../../assets/images/authors/leticia.jpeg";
+import authorMikael from "../../../assets/images/authors/mikael.jpeg";
+import authorJoaoJacinto from "../../../assets/images/authors/joao-jacinto.jpeg";
+import auhtorMoniqueCampos from "../../../assets/images/authors/monique-campos.jpeg";
+import authorLeonardo from "../../../assets/images/authors/leonardo.jpeg";
+import authorPedroMiguel from "../../../assets/images/authors/pedro-miguel.png";
+import authorLucasAlves from "../../../assets/images/authors/lucasalves.jpeg";
+import authorAlvesJhonata from "../../../assets/images/authors/alves-jhonata.png";
 
 export const mockAuthor = [
   {

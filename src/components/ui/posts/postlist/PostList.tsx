@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 
 import { ArrowRight, Clock } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
-import { formatDateToLong } from "../../../utils/formatDate";
-import { getPosts } from "../../../services/postsService";
+import { formatDateToLong } from "../../../../utils/formatDate";
+import { getPosts } from "../../../../services/postsService";
 
 export interface PostType {
   id: number;

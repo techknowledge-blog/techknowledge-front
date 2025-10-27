@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 
-import TechknowledgeMiniLogo from "../../assets/images/new-logo-darkmode.svg";
-import TechknowledgeMiniLogoLight from "../../assets/images/new-logo-lightmode.svg";
-import { ThemeContext } from "../../context/ThemeContext";
+import TechknowledgeMiniLogo from "../../../assets/images/new-logo-darkmode.svg";
+import TechknowledgeMiniLogoLight from "../../../assets/images/new-logo-lightmode.svg";
+import { ThemeContext } from "../../../context/ThemeContext";
 
 export function Footer() {
   const { darkMode } = useContext(ThemeContext);

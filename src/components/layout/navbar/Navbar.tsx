@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 
-import CloseDark from "../../assets/icons/close.svg";
-import MenuHamburgerDark from "../../assets/icons/menu.svg";
-import CloseLight from "../../assets/icons/close-light.svg";
-import MenuHamburgerLight from "../../assets/images/menu-hamburger-lightmode.png";
+import CloseDark from "../../../assets/icons/close.svg";
+import MenuHamburgerDark from "../../../assets/icons/menu.svg";
+import CloseLight from "../../../assets/icons/close-light.svg";
+import MenuHamburgerLight from "../../../assets/images/menu-hamburger-lightmode.png";
 
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);

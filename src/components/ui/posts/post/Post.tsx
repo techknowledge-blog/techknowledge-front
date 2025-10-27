@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { getPostBySlug } from "../../../services/postsService";
+import { getPostBySlug } from "../../../../services/postsService";
 import ReactMarkdown from "react-markdown";
-import { formatDateToCustomFormat } from "../../../utils/formatDate";
+import { formatDateToCustomFormat } from "../../../../utils/formatDate";
 
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github-dark.css";

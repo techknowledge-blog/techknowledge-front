@@ -1,5 +1,5 @@
 import React from "react";
-import { PostList } from "../components/posts/postlist/PostList";
+import { PostList } from "../components/ui/posts/postlist/PostList";
 
 export function Posts() {
   return (

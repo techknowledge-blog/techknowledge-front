@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { formatDateToLong } from "../../../utils/formatDate";
+import { formatDateToLong } from "../../../../utils/formatDate";
 import { PostType } from "../postlist/PostList";
-import { getPosts } from "../../../services/postsService";
+import { getPosts } from "../../../../services/postsService";
 
 import { mockPost } from "../mockPost";
 

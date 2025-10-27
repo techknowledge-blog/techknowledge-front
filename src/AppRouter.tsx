@@ -1,5 +1,5 @@
 import React from "react";
-import { Post } from "./components/posts/post/Post";
+import { Post } from "./components/ui/posts/post/Post";
 import { About } from "./pages/About";
 import { Knowledgers } from "./pages/Knowledgers";
 import { Home } from "./pages/Home";
