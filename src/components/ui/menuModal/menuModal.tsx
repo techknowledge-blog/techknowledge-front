@@ -20,7 +20,7 @@ export function MenuModal({ isOpen, onClose, routes }: MenuModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black/30 z-40 flex items-center justify-center md:hidden">
-      <div className="relative bg-white w-[92%] h-[93vh] rounded-2xl py-4 px-2 shadow-lg border-2 border-white/10 animate-scaleUp">
+      <div className="relative bg-white w-[92%] h-[94dvh] rounded-2xl py-4 px-2 shadow-lg border-2 border-white/10 animate-scaleUp">
         <header className="flex items-center justify-between">
           <img
             src={TechknowledgeLightLogo}
