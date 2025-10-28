@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 
-import ImageFoundersDark from "../assets/images/founders-darkmode.png";
-import ImageFoundersLight from "../assets/images/founders-lightmode.png";
+import ImageFoundersDark from "../../../assets/images/founders-darkmode.png";
+import ImageFoundersLight from "../../../assets/images/founders-lightmode.png";
 
-import { Button } from "../components/ui/button/Button";
-import { ThemeContext } from "../context/ThemeContext";
+import { Button } from "../../../components/ui/button/Button";
+import { ThemeContext } from "../../../context/ThemeContext";
 
 export function SectionFounders() {
   const { darkMode } = useContext(ThemeContext);

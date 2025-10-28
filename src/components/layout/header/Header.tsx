@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { Moon, Sun } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 
-import { Navbar } from "../navbar/Navbar";
 import { ThemeContext } from "../../../context/ThemeContext";
+import { Navbar } from "../navbar/Navbar";
 import styles from "./Header.module.css";
 
 import techknowledgeLogoDark from "../../../assets/images/new-logo-darkmode.svg";

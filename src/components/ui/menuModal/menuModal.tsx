@@ -20,7 +20,7 @@ export function MenuModal({ isOpen, onClose, routes }: MenuModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black/30 z-40 flex items-center justify-center md:hidden">
-      <div className="relative bg-white w-[92%] h-[94vh] rounded-2xl py-5 px-2 shadow-lg border-2 border-white/10 animate-scaleUp">
+      <div className="relative bg-white w-[92%] h-[93vh] rounded-2xl py-4 px-2 shadow-lg border-2 border-white/10 animate-scaleUp">
         <header className="flex items-center justify-between">
           <img
             src={TechknowledgeLightLogo}
@@ -30,11 +30,11 @@ export function MenuModal({ isOpen, onClose, routes }: MenuModalProps) {
 
           <button
             onClick={onClose}
-            className="absolute right-2 top-5 cursor-pointer"
+            className="absolute right-2 top-4 cursor-pointer"
             aria-label="Botão para fechar o menu"
           >
-            <span className="inline-flex items-center justify-center w-12 h-9 border border-black/10 rounded-full">
-              <X size={24} color="#000000" />
+            <span className="inline-flex items-center justify-center w-12 h-8 border border-black/20 rounded-full">
+              <X size={20} color="#000000" />
             </span>
           </button>
         </header>

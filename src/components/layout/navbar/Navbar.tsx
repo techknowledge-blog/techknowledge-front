@@ -24,9 +24,9 @@ export function Navbar() {
         className="absolute right-4 top-8 cursor-pointer md:hidden"
       >
         {darkMode ? (
-          <span className="inline-flex items-center justify-center w-12 h-9 border border-white/10 rounded-full">
+          <span className="inline-flex items-center justify-center w-12 h-8 border border-white/20 rounded-full">
             <List
-              size={24}
+              size={20}
               color="#ffffff"
               className={`transition-all duration-300 ${
                 open
@@ -36,8 +36,8 @@ export function Navbar() {
             />
           </span>
         ) : (
-          <span className="inline-flex items-center justify-center w-12 h-9 border border-black/10 rounded-full">
-            <List size={24} color="#000000" />
+          <span className="inline-flex items-center justify-center w-12 h-8 border border-black/20 rounded-full">
+            <List size={20} color="#000000" />
           </span>
         )}
       </button>
