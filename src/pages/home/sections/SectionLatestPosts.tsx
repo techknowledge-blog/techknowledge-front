@@ -1,7 +1,7 @@
 import React from "react";
 
-import { PostPreview } from "../components/ui/posts/postpreview/PostPreview";
-import { Button } from "../components/ui/button/Button";
+import { PostPreview } from "../../../components/ui/posts/postpreview/PostPreview";
+import { Button } from "../../../components/ui/button/Button";
 
 export function SectionLatestPosts() {
   return (

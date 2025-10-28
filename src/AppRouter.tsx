@@ -2,13 +2,13 @@ import React from "react";
 import { Post } from "./components/ui/posts/post/Post";
 import { About } from "./pages/About";
 import { Knowledgers } from "./pages/Knowledgers";
-import { Home } from "./pages/Home";
 import { Posts } from "./pages/Posts";
 import { TechLab } from "./pages/TechLab";
 import { Contact } from "./pages/Contact";
 import { Route, Routes } from "react-router-dom";
 import { Founders } from "./pages/Founders";
 import { Profile } from "./pages/Profile";
+import { Home } from "./pages/home/Home";
 
 export function AppRouter() {
   return (

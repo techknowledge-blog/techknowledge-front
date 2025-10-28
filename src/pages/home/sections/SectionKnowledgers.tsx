@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "../components/ui/button/Button";
+import { Button } from "../../../components/ui/button/Button";
 
-import knowledgersImage from "../assets/images/knowledgers.png";
+import knowledgersImage from "../../../assets/images/knowledgers.png";
 
 export function SectionKnowledgers() {
   return (

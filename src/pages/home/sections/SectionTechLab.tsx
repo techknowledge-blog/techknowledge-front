@@ -1,7 +1,7 @@
 import React from "react";
 import { CaretRight } from "@phosphor-icons/react";
 import { Link } from "react-router";
-import TechLabImage from "../assets/images/techknowledge-techlab.png";
+import TechLabImage from "../../../assets/images/techknowledge-techlab.png";
 
 export function SectionTechLab() {
   return (

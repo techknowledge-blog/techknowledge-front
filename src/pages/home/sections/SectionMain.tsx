@@ -3,7 +3,7 @@ import React from "react";
 import { CaretRight } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 
-import NewLogo from "../assets/images/techknowledge-logo.svg";
+import NewLogo from "../../../assets/images/techknowledge-logo.svg";
 
 export function SectionMain() {
   return (
