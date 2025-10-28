@@ -20,7 +20,7 @@ export function MenuModal({ isOpen, onClose, routes }: MenuModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black/30 z-40 flex items-center justify-center md:hidden">
-      <div className="relative bg-white w-[95%] h-[98vh] rounded-2xl py-5 px-2 shadow-lg border-2 border-white/10 flex flex-col justify-between animate-scaleUp">
+      <div className="relative bg-white w-[92%] h-[94vh] rounded-2xl py-5 px-2 shadow-lg border-2 border-white/10 animate-scaleUp">
         <header className="flex items-center justify-between">
           <img
             src={TechknowledgeLightLogo}
@@ -39,25 +39,19 @@ export function MenuModal({ isOpen, onClose, routes }: MenuModalProps) {
           </button>
         </header>
 
-        <ul className="flex flex-col items-start gap-6 mt-6 flex-1">
+        <ul className="flex flex-col items-start gap-6">
           {routes.map(({ path, label }) => (
             <li key={label}>
               <Link
                 to={path}
                 onClick={onClose}
-                className="text-xl text-black relative after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-full after:h-[2px] dark:after:bg-blue-300 after:bg-blue-500 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
+                className="text-base text-black relative after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-full after:h-[2px] dark:after:bg-blue-300 after:bg-blue-500 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
               >
                 {label}
               </Link>
             </li>
           ))}
         </ul>
-
-        <footer>
-          <p className="text-lg text-black">
-            © Todos os direitos reservados ao Techknowledge.
-          </p>
-        </footer>
       </div>
     </div>
   );
