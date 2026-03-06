@@ -6,6 +6,7 @@ import authorLeonardo from "../../../assets/images/authors/leonardo.jpeg";
 import authorPedroMiguel from "../../../assets/images/authors/pedro-miguel.png";
 import authorLucasAlves from "../../../assets/images/authors/lucasalves.jpeg";
 import authorAlvesJhonata from "../../../assets/images/authors/alves-jhonata.png";
+import authorDanielDuarte from "../../../assets/images/authors/daniel-duarte.jpeg";
 
 export const mockAuthor = [
   {
@@ -63,5 +64,12 @@ export const mockAuthor = [
     description:
       "Com mais de uma década na área de tecnologia, transformei minha paixão por inovação em soluções tangíveis. Como especialista em Front-end e RPA, crio interfaces intuitivas e automatizo processos complexos, otimizando operações e elevando a experiência do usuário.",
     image: authorAlvesJhonata,
+  },
+  {
+    id: 9,
+    name: "Daniel Duarte",
+    description:
+      "Designer há 17 anos e atua como Senior Product Designer na Freestar, empresa americana de tecnologia. Já desenhou produtos usados por marcas globais como CNN, Reuters e Warner Music Group.",
+    image: authorDanielDuarte,
   },
 ];
