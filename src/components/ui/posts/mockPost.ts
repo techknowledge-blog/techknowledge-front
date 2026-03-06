@@ -15,6 +15,7 @@ import thumbComponentesGenericosParte01 from "../../../assets/images/thumbnails/
 import thumbComponentesGenericosParte02 from "../../../assets/images/thumbnails/componentes-genericos-parte-02.jpg";
 import thumbEntendendoAlgoritmos from "../../../assets/images/thumbnails/entendendo-algoritmos.jpg";
 import thumbTailwindCSSV4 from "../../../assets/images/thumbnails/tailwind-css-v4.jpg";
+import thumbDesignSystem from "../../../assets/images/thumbnails/design-system.jpeg";
 
 export const mockPost = [
   {
@@ -90,5 +91,10 @@ export const mockPost = [
   {
     id: 20,
     coverImage: thumbTailwindCSSV4,
+  },
+
+  {
+    id: 22,
+    coverImage: thumbDesignSystem,
   },
 ];
